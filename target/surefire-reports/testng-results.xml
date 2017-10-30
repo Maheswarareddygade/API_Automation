@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="29450" started-at="2017-10-30T08:35:26Z" finished-at="2017-10-30T08:35:55Z">
+    <groups>
+      <group name="Sanity">
+        <method signature="UserServiceTest.encounterListServiceTest(java.lang.String)[pri:4, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="encounterListServiceTest" class="com.digisight.platform.test.UserServiceTest"/>
+        <method signature="UserServiceTest.getAuthorizationServiceTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="getAuthorizationServiceTest" class="com.digisight.platform.test.UserServiceTest"/>
+        <method signature="UserServiceTest.getUserInfoServiceTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="getUserInfoServiceTest" class="com.digisight.platform.test.UserServiceTest"/>
+        <method signature="UserServiceTest.practicesListServiceTest(java.lang.String)[pri:7, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="practicesListServiceTest" class="com.digisight.platform.test.UserServiceTest"/>
+        <method signature="EHRTest.ehrTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.digisight.platform.test.EHRTest@57fffcd7]" name="ehrTest" class="com.digisight.platform.test.EHRTest"/>
+        <method signature="UserServiceTest.filterLocationslistServiceTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="filterLocationslistServiceTest" class="com.digisight.platform.test.UserServiceTest"/>
+        <method signature="UserServiceTest.locationListServiceTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="locationListServiceTest" class="com.digisight.platform.test.UserServiceTest"/>
+        <method signature="UserServiceTest.patientListServiceTest(java.lang.String)[pri:6, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="patientListServiceTest" class="com.digisight.platform.test.UserServiceTest"/>
+        <method signature="UserServiceTest.physiciansListServiceTest(java.lang.String)[pri:8, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="physiciansListServiceTest" class="com.digisight.platform.test.UserServiceTest"/>
+      </group> <!-- Sanity -->
+      <group name="Smoke">
+        <method signature="UserServiceTest.encounterListServiceTest(java.lang.String)[pri:4, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="encounterListServiceTest" class="com.digisight.platform.test.UserServiceTest"/>
+        <method signature="UserServiceTest.getAuthorizationServiceTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="getAuthorizationServiceTest" class="com.digisight.platform.test.UserServiceTest"/>
+        <method signature="UserServiceTest.getUserInfoServiceTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="getUserInfoServiceTest" class="com.digisight.platform.test.UserServiceTest"/>
+        <method signature="UserServiceTest.practicesListServiceTest(java.lang.String)[pri:7, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="practicesListServiceTest" class="com.digisight.platform.test.UserServiceTest"/>
+        <method signature="EHRTest.ehrTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.digisight.platform.test.EHRTest@57fffcd7]" name="ehrTest" class="com.digisight.platform.test.EHRTest"/>
+        <method signature="UserServiceTest.filterLocationslistServiceTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="filterLocationslistServiceTest" class="com.digisight.platform.test.UserServiceTest"/>
+        <method signature="UserServiceTest.locationListServiceTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="locationListServiceTest" class="com.digisight.platform.test.UserServiceTest"/>
+        <method signature="UserServiceTest.patientListServiceTest(java.lang.String)[pri:6, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="patientListServiceTest" class="com.digisight.platform.test.UserServiceTest"/>
+        <method signature="UserServiceTest.physiciansListServiceTest(java.lang.String)[pri:8, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="physiciansListServiceTest" class="com.digisight.platform.test.UserServiceTest"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Command line test" duration-ms="29450" started-at="2017-10-30T08:35:26Z" finished-at="2017-10-30T08:35:55Z">
+      <class name="com.digisight.platform.test.EHRTest">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:com.digisight.platform.test.EHRTest@57fffcd7]" name="testSetUp" is-config="true" duration-ms="46" started-at="2017-10-30T14:05:26Z" finished-at="2017-10-30T14:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="ehrTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.digisight.platform.test.EHRTest@57fffcd7]" name="ehrTest" duration-ms="6747" started-at="2017-10-30T14:05:26Z" data-provider="ehrInfo" finished-at="2017-10-30T14:05:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://ehr-qa.digisight.net//Integration/Authenticate]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qa@digisight.net]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password@1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bearer]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ehrTest -->
+      </class> <!-- com.digisight.platform.test.EHRTest -->
+      <class name="com.digisight.platform.test.UserServiceTest">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="testSetUp" is-config="true" duration-ms="0" started-at="2017-10-30T14:05:32Z" finished-at="2017-10-30T14:05:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="getAuthorizationServiceTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="getAuthorizationServiceTest" duration-ms="1618" started-at="2017-10-30T14:05:32Z" description=" Method is used to test authorization service " data-provider="authorization" finished-at="2017-10-30T14:05:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://api-qa.digisight.net/gw/api/oauth/token]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bearer]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[automation@digisight.net]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test1234]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.8.1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAuthorizationServiceTest -->
+        <test-method name="getUserInfoServiceTest" signature="getUserInfoServiceTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" status="PASS" duration-ms="1337" finished-at="2017-10-30T14:05:35Z" started-at="2017-10-30T14:05:34Z" depends-on-methods="com.digisight.platform.test.UserServiceTest.getAuthorizationServiceTest" data-provider="userInfo" description=" Method is used to test user info service. ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://api-qa.digisight.net/gw/paxos/getUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[automation]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manchester]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[automation@digisight.net]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[665]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[153]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[153]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[1525]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[10788]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[153]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[automation@digisight.net]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserInfoServiceTest -->
+        <test-method status="PASS" signature="filterLocationslistServiceTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="filterLocationslistServiceTest" duration-ms="1428" started-at="2017-10-30T14:05:35Z" description=" Method is used to test filter locations list service." data-provider="filterLacation" finished-at="2017-10-30T14:05:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://api-qa.digisight.net/gw/api/filterLocations]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[BANGALORE]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[667]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterLocationslistServiceTest -->
+        <test-method status="PASS" signature="encounterListServiceTest(java.lang.String)[pri:4, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="encounterListServiceTest" duration-ms="5578" started-at="2017-10-30T14:05:37Z" description=" Method is used to test create encounter &amp; encounter list service." data-provider="createEncounter" finished-at="2017-10-30T14:05:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://api-qa.digisight.net/gw/paxos/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encounterListServiceTest -->
+        <test-method status="PASS" signature="locationListServiceTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="locationListServiceTest" duration-ms="1175" started-at="2017-10-30T14:05:42Z" description=" Method is used to test location list service." data-provider="locationList" finished-at="2017-10-30T14:05:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://api-qa.digisight.net/gw/api/locations]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[665]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[153]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locationListServiceTest -->
+        <test-method status="PASS" signature="patientListServiceTest(java.lang.String)[pri:6, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="patientListServiceTest" duration-ms="6360" started-at="2017-10-30T14:05:43Z" description=" Method is used to test patient list service." data-provider="patientList" finished-at="2017-10-30T14:05:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://api-qa.digisight.net/gw/paxos/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patientListServiceTest -->
+        <test-method status="PASS" signature="practicesListServiceTest(java.lang.String)[pri:7, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="practicesListServiceTest" duration-ms="3714" started-at="2017-10-30T14:05:50Z" description=" Method is used to test location list service." data-provider="practicesList" finished-at="2017-10-30T14:05:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://api-qa.digisight.net/gw/api/practices]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- practicesListServiceTest -->
+        <test-method status="PASS" signature="physiciansListServiceTest(java.lang.String)[pri:8, instance:com.digisight.platform.test.UserServiceTest@31ef45e3]" name="physiciansListServiceTest" duration-ms="1393" started-at="2017-10-30T14:05:54Z" description=" Method is used to test location list service." data-provider="physiciansList" finished-at="2017-10-30T14:05:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://api-qa.digisight.net/gw/api/physicians]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- physiciansListServiceTest -->
+      </class> <!-- com.digisight.platform.test.UserServiceTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

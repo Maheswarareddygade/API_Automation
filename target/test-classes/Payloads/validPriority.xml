@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<send>
+<email-notification>
+    <channel>EMAIL</channel>
+    <locale>
+        <language>en</language>
+        <country>US</country>
+    </locale>
+    <content>
+        <message>
+            <metadata>
+                <from>
+                    <email-address>notifier@reardencommerce.com</email-address>
+                    <name>Rearden Commerce</name>
+                </from>
+                <reply-to>
+                    <email-address>notifier@reardencommerce.com</email-address>
+                    <name>Rearden Commerce</name>
+                </reply-to>
+                <subject>
+                    
+                </subject>
+                <priority>5</priority>
+                <to-contacts>
+ <contact>
+                        <email-address>gragothaman@deem.com</email-address>
+                        <name>blackhole</name>
+                    </contact>
+</to-contacts>
+            </metadata>
+            <data>
+                <body-part>
+                    <body>
+                        <text-content>
+                            <header>
+                                <name>Content-Type</name>
+								<value>text/plain</value>
+                            </header>
+                            <content>
+                                <string><![CDATA[body part email with text content and attachment.]]></string>
+                            </content>
+                        </text-content>
+                    </body>
+			
+                </body-part>
+			
+            </data>
+        </message>
+    </content>
+    <expiry>0</expiry>
+</email-notification>
+</send>

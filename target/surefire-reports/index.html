@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
+              <span class="suite-name border-passed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Command_line_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Command_line_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Command_line_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Command_line_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Command_line_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Command_line_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.digisight.platform.test.EHRTest" hash-for-method="ehrTest(https://ehr-qa.digisight.net//Integration/Authenticate, qa@digisight.net, Password@1, Bearer, )">ehrTest(https://ehr-qa.digisight.net//Integration/Authenticate, qa@digisight.net, Password@1, Bearer, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.digisight.platform.test.UserServiceTest" hash-for-method="encounterListServiceTest(https://api-qa.digisight.net/gw/paxos/)">encounterListServiceTest(https://api-qa.digisight.net/gw/paxos/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.digisight.platform.test.UserServiceTest" hash-for-method="filterLocationslistServiceTest(https://api-qa.digisight.net/gw/api/filterLocations, 0, BANGALORE, 667)">filterLocationslistServiceTest(https://api-qa.digisight.net/gw/api/filterLocations, 0, BANGALORE, 667)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.digisight.platform.test.UserServiceTest" hash-for-method="getAuthorizationServiceTest(https://api-qa.digisight.net/gw/api/oauth/token, Bearer, password, automation@digisight.net, Test123...)">getAuthorizationServiceTest(https://api-qa.digisight.net/gw/api/oauth/token, Bearer, password, automation@digisight.net, Test123...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.digisight.platform.test.UserServiceTest" hash-for-method="getUserInfoServiceTest(https://api-qa.digisight.net/gw/paxos/getUser, , automation, manchester, automation@digisight.net, 6...)">getUserInfoServiceTest(https://api-qa.digisight.net/gw/paxos/getUser, , automation, manchester, automation@digisight.net, 6...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.digisight.platform.test.UserServiceTest" hash-for-method="locationListServiceTest(https://api-qa.digisight.net/gw/api/locations, 665, 153, India)">locationListServiceTest(https://api-qa.digisight.net/gw/api/locations, 665, 153, India)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.digisight.platform.test.UserServiceTest" hash-for-method="patientListServiceTest(https://api-qa.digisight.net/gw/paxos/)">patientListServiceTest(https://api-qa.digisight.net/gw/paxos/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.digisight.platform.test.UserServiceTest" hash-for-method="physiciansListServiceTest(https://api-qa.digisight.net/gw/api/physicians)">physiciansListServiceTest(https://api-qa.digisight.net/gw/api/physicians)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.digisight.platform.test.UserServiceTest" hash-for-method="practicesListServiceTest(https://api-qa.digisight.net/gw/api/practices)">practicesListServiceTest(https://api-qa.digisight.net/gw/api/practices)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.digisight.platform.test.EHRTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehrTest(https://ehr-qa.digisight.net//Integration/Authenticate, qa@digisight.net, Password@1, Bearer, )">
+                  </a> <!-- ehrTest(https://ehr-qa.digisight.net//Integration/Authenticate, qa@digisight.net, Password@1, Bearer, ) -->
+                  <span class="method-name">ehrTest</span>
+                  <span class="parameters">(https://ehr-qa.digisight.net//Integration/Authenticate, qa@digisight.net, Password@1, Bearer, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.digisight.platform.test.UserServiceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="encounterListServiceTest(https://api-qa.digisight.net/gw/paxos/)">
+                  </a> <!-- encounterListServiceTest(https://api-qa.digisight.net/gw/paxos/) -->
+                  <span class="method-name">encounterListServiceTest</span>
+                  <span class="parameters">(https://api-qa.digisight.net/gw/paxos/)</span>
+                  <em>
+( Method is used to test create encounter & encounter list service.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterLocationslistServiceTest(https://api-qa.digisight.net/gw/api/filterLocations, 0, BANGALORE, 667)">
+                  </a> <!-- filterLocationslistServiceTest(https://api-qa.digisight.net/gw/api/filterLocations, 0, BANGALORE, 667) -->
+                  <span class="method-name">filterLocationslistServiceTest</span>
+                  <span class="parameters">(https://api-qa.digisight.net/gw/api/filterLocations, 0, BANGALORE, 667)</span>
+                  <em>
+( Method is used to test filter locations list service.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAuthorizationServiceTest(https://api-qa.digisight.net/gw/api/oauth/token, Bearer, password, automation@digisight.net, Test123...)">
+                  </a> <!-- getAuthorizationServiceTest(https://api-qa.digisight.net/gw/api/oauth/token, Bearer, password, automation@digisight.net, Test123...) -->
+                  <span class="method-name">getAuthorizationServiceTest</span>
+                  <span class="parameters">(https://api-qa.digisight.net/gw/api/oauth/token, Bearer, password, automation@digisight.net, Test1234, 1.8.1)</span>
+                  <em>
+( Method is used to test authorization service )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserInfoServiceTest(https://api-qa.digisight.net/gw/paxos/getUser, , automation, manchester, automation@digisight.net, 6...)">
+                  </a> <!-- getUserInfoServiceTest(https://api-qa.digisight.net/gw/paxos/getUser, , automation, manchester, automation@digisight.net, 6...) -->
+                  <span class="method-name">getUserInfoServiceTest</span>
+                  <span class="parameters">(https://api-qa.digisight.net/gw/paxos/getUser, , automation, manchester, automation@digisight.net, 665, India, 153, 153, 1525, 10788, 153, automation@digisight.net)</span>
+                  <em>
+( Method is used to test user info service. )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="locationListServiceTest(https://api-qa.digisight.net/gw/api/locations, 665, 153, India)">
+                  </a> <!-- locationListServiceTest(https://api-qa.digisight.net/gw/api/locations, 665, 153, India) -->
+                  <span class="method-name">locationListServiceTest</span>
+                  <span class="parameters">(https://api-qa.digisight.net/gw/api/locations, 665, 153, India)</span>
+                  <em>
+( Method is used to test location list service.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="patientListServiceTest(https://api-qa.digisight.net/gw/paxos/)">
+                  </a> <!-- patientListServiceTest(https://api-qa.digisight.net/gw/paxos/) -->
+                  <span class="method-name">patientListServiceTest</span>
+                  <span class="parameters">(https://api-qa.digisight.net/gw/paxos/)</span>
+                  <em>
+( Method is used to test patient list service.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="physiciansListServiceTest(https://api-qa.digisight.net/gw/api/physicians)">
+                  </a> <!-- physiciansListServiceTest(https://api-qa.digisight.net/gw/api/physicians) -->
+                  <span class="method-name">physiciansListServiceTest</span>
+                  <span class="parameters">(https://api-qa.digisight.net/gw/api/physicians)</span>
+                  <em>
+( Method is used to test location list service.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="practicesListServiceTest(https://api-qa.digisight.net/gw/api/practices)">
+                  </a> <!-- practicesListServiceTest(https://api-qa.digisight.net/gw/api/practices) -->
+                  <span class="method-name">practicesListServiceTest</span>
+                  <span class="parameters">(https://api-qa.digisight.net/gw/api/practices)</span>
+                  <em>
+( Method is used to test location list service.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
+  &lt;test name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.digisight.platform.test.EHRTest&quot;/&gt;
+      &lt;class name=&quot;com.digisight.platform.test.UserServiceTest&quot;/&gt;
+      &lt;class name=&quot;com.digisight.platform.utility.BaseApiTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">ehrTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">encounterListServiceTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">filterLocationslistServiceTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAuthorizationServiceTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getUserInfoServiceTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">locationListServiceTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">patientListServiceTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">physiciansListServiceTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">practicesListServiceTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">ehrTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">encounterListServiceTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">filterLocationslistServiceTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAuthorizationServiceTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getUserInfoServiceTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">locationListServiceTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">patientListServiceTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">physiciansListServiceTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">practicesListServiceTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'ehrTest')
+data.setCell(0, 2, 'com.digisight.platform.test.EHRTest')
+data.setCell(0, 3, 6747);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'patientListServiceTest')
+data.setCell(1, 2, 'com.digisight.platform.test.UserServiceTest')
+data.setCell(1, 3, 6360);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'encounterListServiceTest')
+data.setCell(2, 2, 'com.digisight.platform.test.UserServiceTest')
+data.setCell(2, 3, 5578);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'practicesListServiceTest')
+data.setCell(3, 2, 'com.digisight.platform.test.UserServiceTest')
+data.setCell(3, 3, 3714);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getAuthorizationServiceTest')
+data.setCell(4, 2, 'com.digisight.platform.test.UserServiceTest')
+data.setCell(4, 3, 1618);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'filterLocationslistServiceTest')
+data.setCell(5, 2, 'com.digisight.platform.test.UserServiceTest')
+data.setCell(5, 3, 1428);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'physiciansListServiceTest')
+data.setCell(6, 2, 'com.digisight.platform.test.UserServiceTest')
+data.setCell(6, 3, 1393);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'getUserInfoServiceTest')
+data.setCell(7, 2, 'com.digisight.platform.test.UserServiceTest')
+data.setCell(7, 3, 1337);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'locationListServiceTest')
+data.setCell(8, 2, 'com.digisight.platform.test.UserServiceTest')
+data.setCell(8, 3, 1175);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.digisight.platform.test.EHRTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">ehrTest(https://ehr-qa.digisight.net//Integration/Authenticate, qa@digisight.net, Password@1, Bearer, )</span>
+                <span class="method-start">74 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.digisight.platform.test.UserServiceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">6823 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getAuthorizationServiceTest(https://api-qa.digisight.net/gw/api/oauth/token, Bearer, password, automation@digisight.net, Test123...)</span>
+                <span class="method-start">6825 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getUserInfoServiceTest(https://api-qa.digisight.net/gw/paxos/getUser, , automation, manchester, automation@digisight.net, 6...)</span>
+                <span class="method-start">8445 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">filterLocationslistServiceTest(https://api-qa.digisight.net/gw/api/filterLocations, 0, BANGALORE, 667)</span>
+                <span class="method-start">9783 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">encounterListServiceTest(https://api-qa.digisight.net/gw/paxos/)</span>
+                <span class="method-start">11212 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">locationListServiceTest(https://api-qa.digisight.net/gw/api/locations, 665, 153, India)</span>
+                <span class="method-start">16792 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">patientListServiceTest(https://api-qa.digisight.net/gw/paxos/)</span>
+                <span class="method-start">17969 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">practicesListServiceTest(https://api-qa.digisight.net/gw/api/practices)</span>
+                <span class="method-start">24330 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">physiciansListServiceTest(https://api-qa.digisight.net/gw/api/physicians)</span>
+                <span class="method-start">28045 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

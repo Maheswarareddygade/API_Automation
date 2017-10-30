@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="User Info Test Service suite " verbose="1" >
+  <test name=" User Info Service Test Suite " >
+    <classes>
+      <class name="com.digisight.platform.test.UserServiceTest"/>
+    </classes>
+ </test>
+</suite>

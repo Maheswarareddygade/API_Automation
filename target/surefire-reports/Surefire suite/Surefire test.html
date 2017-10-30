@@ -1,0 +1,2687 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>179/8/8</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 20 21:04:39 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>1284 seconds (1284820 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.NotificationServiceTest.setTest()'><b>setTest</b><br>Test class: com.deem.joltage.platformtests.test.NotificationServiceTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.deem.joltage.platformtests.test.NotificationServiceTest.setTest(NotificationServiceTest.java:40)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22496335", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22496335'><pre>java.lang.NullPointerException
+	at com.deem.joltage.platformtests.test.NotificationServiceTest.setTest(NotificationServiceTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.NotificationServiceTest@1edb8c6</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RESearchServiceTest.setTest()'><b>setTest</b><br>Test class: com.deem.joltage.platformtests.test.RESearchServiceTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.deem.joltage.platformtests.test.RESearchServiceTest.setTest(RESearchServiceTest.java:37)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29102939", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29102939'><pre>java.lang.NullPointerException
+	at com.deem.joltage.platformtests.test.RESearchServiceTest.setTest(RESearchServiceTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RESearchServiceTest@135fd95</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalMultSearchService()'><b>reCarRentalMultSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 4, 4, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="car_rental_v1" queryID="0" type="carrental">
+		<Records maxResults="1000" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>1000.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="33.9456" longitude="-118.3923"/>
+		</GlobalParameters>
+		<Sorting>
+			<ByDistance/>
+		</Sorting>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Group operation="AND">
+						<Match exact="true" field="reardenProviderId" wildcard="false">10101
+						</Match>
+						<Match exact="true" field="status" wildcard="false">ACTIVE</Match>
+					</Group>
+					<Proximity distance="1000.0" distanceUOM="mi" latitude="33.9456" longitude="-118.3923"/>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="oagId" wildcard="false">ZRLAX</Match>
+					<Match exact="false" field="oagId" wildcard="false">ZDLAX</Match>
+					<Match exact="false" field="oagId" wildcard="false">ETLAX</Match>
+					<Match exact="false" field="oagId" wildcard="false">ZILAX</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="33.9456" longitude="-118.3923"/>
+		</Fields>
+		<Facets>
+			<Field field="vendorId"/>
+		</Facets>
+	</Query>
+</ss:QueryRequests>, LcarRental_TCOS ANGELES, US, CA, LAX, 3106495400, ET, ETLAX, 8734 BELLANCA AVE, 90045</td>
+<td><div><pre>java.lang.AssertionError: Group id should be same. expected [LcarRental_TCOS ANGELES] but found [LOS ANGELES]
+	at com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalMultSearchService(RENightlySuiteTest.java:926)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18032946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18032946'><pre>java.lang.AssertionError: Group id should be same. expected [LcarRental_TCOS ANGELES] but found [LOS ANGELES]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalMultSearchService(RENightlySuiteTest.java:926)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCostAllcationSearchServiceTest()'><b>reCostAllcationSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 1, 1, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="costallocation_suggest" queryID="0" type="costallocation">
+		<Records maxResults="5" startAt="0"/>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Match exact="false" field="costallocation" wildcard="false">Malappuram
+					</Match>
+					<Group operation="OR">
+						<Match exact="false" field="siteId" wildcard="false">864750</Match>
+					</Group>
+					<Match exact="false" field="active" wildcard="false">true</Match>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="segmentId" wildcard="false">2106</Match>
+					<Match exact="false" field="allocationId" wildcard="false">16913</Match>
+				</Group>
+			</Group>
+		</Constraints>
+	</Query>
+</ss:QueryRequests>, 2106, Malappuram, 16913, 864750, true, 16793, 5.4725103</td>
+<td><div><pre>java.lang.AssertionError: Address Line one should be same. expected [5.4725103] but found [5.4951925]
+	at com.deem.joltage.platformtests.test.RENightlySuiteTest.reCostAllcationSearchServiceTest(RENightlySuiteTest.java:171)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace28015241", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace28015241'><pre>java.lang.AssertionError: Address Line one should be same. expected [5.4725103] but found [5.4951925]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at com.deem.joltage.platformtests.test.RENightlySuiteTest.reCostAllcationSearchServiceTest(RENightlySuiteTest.java:171)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.updateUserServiceTest()'><b>updateUserServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user/3695941?site_id=32265&src=end-user:profile-ui, 200, maheshwar.gade@deem.com, Mahesh, Gade, 8688571, 24045, 53025, 233, 333</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.deem.joltage.platformtests.test.UserProfileServiceTest.updateUserServiceTest(UserProfileServiceTest.java:111)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16059085", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16059085'><pre>java.lang.NullPointerException
+	at com.deem.joltage.platformtests.test.UserProfileServiceTest.updateUserServiceTest(UserProfileServiceTest.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>14</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.validateUserInfoTest()'><b>validateUserInfoTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user/8688571?site_id=53025&g=employee&fg=core&fg=approvees&fg=authentication&fg=authorization&fg=businessContact&fg=creditCards&fg=display&fg=documents&fg=emergencyContact&fg=employee&fg=groupware&fg=legalPolicy&fg=name&fg=notification&fg=personal&fg=personalContact&fg=delegates&fg=airPreferences, ACTIVE, 53025, 8688571, US, END_USER, 923, Mahesh, maheshwar.gade@deem.com, null</td>
+<td><div><pre>java.lang.AssertionError: Given should be same expected [Mahesh] but found [mahesh]
+	at com.deem.joltage.platformtests.test.UserProfileServiceTest.validateUserInfoTest(UserProfileServiceTest.java:132)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29754641", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29754641'><pre>java.lang.AssertionError: Given should be same expected [Mahesh] but found [mahesh]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at com.deem.joltage.platformtests.test.UserProfileServiceTest.validateUserInfoTest(UserProfileServiceTest.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>2</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeAddress/en?countryRegion=Israel&adminDistrict=Haifa&postalCode=&locality=Airport, 200, 32.8118436, 35.0430736, Haifa, IL</td>
+<td><div><pre>java.lang.AssertionError: latitude  should be same. expected [32.8118436] but found [32.8139897]
+	at com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest(LocationServiceTest.java:105)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6469705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6469705'><pre>java.lang.AssertionError: latitude  should be same. expected [32.8118436] but found [32.8139897]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest(LocationServiceTest.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeAddress/en?countryRegion=Israel&adminDistrict=Haifa&postalCode=&locality=Airport&addressLine=, 200, 32.8113927, 35.0440391, Haifa, IL</td>
+<td><div><pre>java.lang.AssertionError: latitude  should be same. expected [32.8113927] but found [32.8139897]
+	at com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest(LocationServiceTest.java:105)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26753980", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26753980'><pre>java.lang.AssertionError: latitude  should be same. expected [32.8113927] but found [32.8139897]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest(LocationServiceTest.java:105)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>3</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest()'><b>validatedPostalAddressServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Verify the postal addres in responce.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=27%20Weybridge%20Park&ct=Weybridge&pc=KT13%208SQ&sc=Surrey&cc=GB, 200, true, weybridge, GB, false, SURREY, 27, null</td>
+<td><div><pre>java.lang.AssertionError: Address should be same. expected [weybridge] but found [sunnyvale]
+	at com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest(LocationServiceTest.java:138)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace28899172", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace28899172'><pre>java.lang.AssertionError: Address should be same. expected [weybridge] but found [sunnyvale]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest(LocationServiceTest.java:138)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>491</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedSuggestedPostalAddressServiceTest()'><b>validatedSuggestedPostalAddressServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Verify the postal addres in responce.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=1980%20Avenue%20Pierre-P�ladeau&ct=Laval&pc=H7T&sc=QC&cc=CA, 200, true, LAVAL, CA, false, QC, 1701-1799 AV PIERRE-PÉLADEAU, null</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [null]
+	at com.deem.joltage.platformtests.test.LocationServiceTest.validatedSuggestedPostalAddressServiceTest(LocationServiceTest.java:158)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11142239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11142239'><pre>java.lang.AssertionError: expected [true] but found [null]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at com.deem.joltage.platformtests.test.LocationServiceTest.validatedSuggestedPostalAddressServiceTest(LocationServiceTest.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>487</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.GetApproverChainServiceTest()'><b>GetApproverChainServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user/3705826/approver-chain?site_id=32265&service_type=purchase, 200, 3705871, 32265, 3705811, CM, deem4, 3705856, 32265, 3705871, CM, deem3, 3705841, 32265, 3705856, CM, deem2</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.GetAssignRolesServiceTest()'><b>GetAssignRolesServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user/3737311?site_id=32265&src=end-user:profile-ui, 200, {"authorization": {"roles" : [ {      "name" : "ROLE_APPROVER"    },     {      "name" : "ROLE_PURCHASE_APPROVER"    },    {      "name" : "ROLE_TRAVEL_APPROVER"    }]}}, ROLE_TRAVEL_APPROVER, ROLE_APPROVER, ROLE_PURCHASE_APPROVER</td>
+<td></td>
+<td>17</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.GetAssignRolesServiceTest()'><b>GetAssignRolesServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user/3737311?site_id=32265&src=end-user:profile-ui, 200, {"authorization": {"roles" : [ {      "name" : "ROLE_APPROVER"    },     {      "name" : "ROLE_PURCHASE_APPROVER"    },    {      "name" : "ROLE_TRAVEL_APPROVER"    }]}}, ROLE_TRAVEL_APPROVER, ROLE_APPROVER, ROLE_PURCHASE_APPROVER</td>
+<td></td>
+<td>15</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.GetHealthCheckServiceTest()'><b>GetHealthCheckServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/monitor/status, 200, OK, OK, OK</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.createBatchUsersTest()'><b>createBatchUsersTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/users?src=batch:profile-upload&natural_key=email, 201, {  "users":[    {      "core":{        "siteId":53025,        "externalId":"333444",        "email":"maheshwar.gade@deem.com",        "username":"GAdemahesh"      },      "name":{        "given":"Mahesh",        "surname":"Gade"      },      "employee":{        "employeeId":923,        "departmentRefId":""      },      "authorization":{        "roles":[          {            "name":"ROLE_SITE_ADMIN"          }        ]      }    },    {      "core":{        "siteId":53025,        "externalId":"343444",        "email":"maheshwa@deem.com",        "username":"Mahesh"      },      "name":{        "given":"Mahesh",        "surname":"Commerce7"      },      "employee":{        "employeeId":9000,        "departmentRefId":""      },      "authorization":{        "roles":[          {            "name":"ROLE_SITE_ADMIN"          }        ]      }    }  ]}, maheshwar.gade@deem.com, 53025, 8688571, 24045, gademahesh, Mahesh, maheshwa@deem.com, 53025, 8699881, 24045, mahesh, Mahesh</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.createUserServiceTest()'><b>createUserServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user?src=end-user:dad, 201, 2@deem.com, 32514536, 53025, G, Mahesh</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.getApproverInfoTest()'><b>getApproverInfoTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user/3705886?site_id=32265&fg=core&fg=name&fg=approvees, 200, limit_01, 32265, 3705886, user, 3706081</td>
+<td></td>
+<td>2</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.getApproverInfoTest()'><b>getApproverInfoTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user/3685771?site_id=32265&fg=core&fg=name&fg=approvees, 200, extid_0008, 32265, 3685771, kumar, www1</td>
+<td></td>
+<td>2</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.inValidatedPostalCode()'><b>inValidatedPostalCode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the postal code is valid or not.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=0000%20E.%20Hillsdale%20Blvd&l2=Suite%20600&ct=Foster%20City&pc=94404&sc=CA&cc=US, 200, Foster City, false, 0000 E. Hillsdale Blvd, CA, false, US, Suite 600</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.inValidatedPostalCode()'><b>inValidatedPostalCode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the postal code is valid or not.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=1051%20E.%20Hillsdale%20Blvd&l2=Suite%20600&ct=Foster%20City&pc=94404&sc=CA&cc=US, 200, Foster City, true, 1051 E. Hillsdale Blvd, CA, false, US, Suite 600</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.inValidatedPostalCode()'><b>inValidatedPostalCode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the postal code is valid or not.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=1+East+Hillsdale+Blvd&l2=&ct=East+Palo+Alto&pc=TestJob&sc=CA&cc=US, 200, East Palo Alto, false, 1 East Hillsdale Blvd, CA, false, US, </td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.inValidatedPostalCode()'><b>inValidatedPostalCode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the postal code is valid or not.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=Lodge+Center&l2=Arundelpet&ct=Guntur&pc=522002&sc=AP&cc=IN, 200, Guntur, false, Lodge Center, AP, false, IN, Arundelpet</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.inValidatedPostalCode()'><b>inValidatedPostalCode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the postal code is valid or not.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=First+Avenue&l2=701+A&ct=Blue+Whale&pc=94404&sc=SFO&cc=US, 200, Blue Whale, false, First Avenue, SFO, false, US, 701 A</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.inValidatedPostalCode()'><b>inValidatedPostalCode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the postal code is valid or not.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=&l2=Suite%20600&ct=&pc=&sc=&cc=US, 200, , false, , , false, US, Suite 600</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.inValidatedReverseGeocode()'><b>inValidatedReverseGeocode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based on latitude and logutude.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/reverseGeocode/en/42.43186064064503/7.21456108987331, 500</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.inValidatedReverseGeocode()'><b>inValidatedReverseGeocode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based on latitude and logutude.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address//, 405</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.inValidatedReverseGeocode()'><b>inValidatedReverseGeocode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based on latitude and logutude.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/42.43186064064503/, 404</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.ipLocationServiceTest()'><b>ipLocationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based IP of machine.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/iplocation/122.172.182.131, 200, 122.172.182.131, Bangalore, , IN, 19, 0</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.ipLocationServiceTest()'><b>ipLocationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based IP of machine.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/iplocation/8.8.8.8, 200, 8.8.8.8, Mountain View, 94035, US, CA, 807</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.ipLocationServiceTest()'><b>ipLocationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based IP of machine.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/iplocation/75.126.220.30, 200, 75.126.220.30, Dallas, 75270, US, TX, 623</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.ipLocationServiceTest()'><b>ipLocationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based IP of machine.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/iplocation/205.251.242.58, 200, 205.251.242.58, Ashburn, 20149, US, VA, 511</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.ipLocationServiceTest()'><b>ipLocationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based IP of machine.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/iplocation/204.225.144.0, 200, 204.225.144.0, Ottawa, K4A, CA, ON, 0</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.ipLocationServiceTest()'><b>ipLocationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based IP of machine.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/iplocation/122.13.91.202, 200, 122.13.91.202, Guangzhou, , CN, 30, 0</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.ipLocationServiceTest()'><b>ipLocationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based IP of machine.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/iplocation/54.255.182.131, 200, 54.255.182.131, Singapore, , SG, 00, 0</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.ipLocationServiceTest()'><b>ipLocationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based IP of machine.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/iplocation/204.93.54.15, 200, 204.93.54.15, Montréal, H4M, CA, QC, 0</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.ipLocationServiceTest()'><b>ipLocationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based IP of machine.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/iplocation/24.255.182.131, 200, 24.255.182.131, Topeka, 66604, US, KS, 605</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.locationInvalidServiceTest()'><b>locationInvalidServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to verify the addres information.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeAddress/en?countryRegion=IN&adminDistrict=Karn&postalCode=600019&locality=KRoad&addressLine=Level%208%20Presti, 200, null, false</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.locationServiceTest()'><b>locationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to verify the addres information.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeAddress/en?countryRegion=US&adminDistrict=CA&postalCode=94404&locality=Foster%20City&addressLine=1051%20E%20Hillsdale%20Blvd, 200, 1051 E Hillsdale Blvd, CA, 94404, Foster City, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.locationServiceTest()'><b>locationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to verify the addres information.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeAddress/en?countryRegion=IN&adminDistrict=Karnataka&postalCode=560001&locality=Bangalore&addressLine=Kasturba%20Road%2CLevel%208%20Prestige%20Obelisk, 200, Kasturba Rd, KA, 560001, Bengaluru, IN</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.locationServiceTest()'><b>locationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to verify the addres information.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeAddress/en?countryRegion=US, 200, null, null, null, null, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.locationServiceTest()'><b>locationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to verify the addres information.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeAddress/en?countryRegion=Id, 200, null, ID, null, null, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.locationServiceTest()'><b>locationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to verify the addres information.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeAddress/en?countryRegion=US&adminDistrict=&postalCode=&locality=&addressLine=, 200, null, null, null, null, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.locationServiceTest()'><b>locationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to verify the addres information.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeAddress/en?locality=Foster%20City, 200, null, CA, null, Foster City, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.locationServiceTest()'><b>locationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to verify the addres information.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeAddress/en?postalCode=KT13%208SQ, 200, Weybridge Park, England, KT13 8SQ, Weybridge, GB</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.locationServiceTest()'><b>locationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to verify the addres information.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeAddress/en?locality=SF, 200, null, CA, null, SF, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.nullOrInvalidGeocodeQueryTest()'><b>nullOrInvalidGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/San%20Jose,%20California, 200, {"alternateAddresses":[]}{"alternateAddresses":[]}</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.nullOrInvalidGeocodeQueryTest()'><b>nullOrInvalidGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/en/&l2=Suite%20600&ct=&pc=&sc=&cc=US, 200, {"alternateAddresses":[]}{"alternateAddresses":[]}</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.nullOrInvalidGeocodeQueryTest()'><b>nullOrInvalidGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeAddress//San%20Jose,%20California, 404, </td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.nullOrInvalidGeocodeQueryTest()'><b>nullOrInvalidGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/ca/,port, 200, {"alternateAddresses":[]}{"alternateAddresses":[]}</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalMultSearchService()'><b>reCarRentalMultSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 4, 4, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="car_rental_v1" queryID="0" type="carrental">
+		<Records maxResults="1000" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>1000.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="37.6148" longitude="-122.3918"/>
+		</GlobalParameters>
+		<Sorting>
+			<ByDistance/>
+		</Sorting>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Group operation="AND">
+						<Match exact="true" field="reardenProviderId" wildcard="false">10101
+						</Match>
+						<Match exact="true" field="status" wildcard="false">ACTIVE</Match>
+					</Group>
+					<Proximity distance="1000.0" distanceUOM="mi" latitude="37.6148" longitude="-122.3918"/>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="oagId" wildcard="false">ZDSFO</Match>
+					<Match exact="false" field="oagId" wildcard="false">ZRSFO</Match>
+					<Match exact="false" field="oagId" wildcard="false">ETSFO</Match>
+					<Match exact="false" field="oagId" wildcard="false">ZISFO</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="37.6148" longitude="-122.3918"/>
+		</Fields>
+		<Facets>
+			<Field field="vendorId"/>
+		</Facets>
+	</Query>
+</ss:QueryRequests>, SAN FRANCISCO, US, CA, SFO, 6506979200, ET, ETSFO, 780 NORTH MCDONNELL RD, 94128</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalMultSearchService()'><b>reCarRentalMultSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 4, 4, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="car_rental_v1" queryID="0" type="carrental">
+		<Records maxResults="1000" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>1000.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="37.3709" longitude="-121.9305"/>
+		</GlobalParameters>
+		<Sorting>
+			<ByDistance/>
+		</Sorting>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Group operation="AND">
+						<Match exact="true" field="reardenProviderId" wildcard="false">10101
+						</Match>
+						<Match exact="true" field="status" wildcard="false">ACTIVE</Match>
+					</Group>
+					<Proximity distance="1000.0" distanceUOM="mi" latitude="37.3709" longitude="-121.9305"/>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="oagId" wildcard="false">ETSJC</Match>
+					<Match exact="false" field="oagId" wildcard="false">ZISJC</Match>
+					<Match exact="false" field="oagId" wildcard="false">ZRSJC</Match>
+					<Match exact="false" field="oagId" wildcard="false">ZDSJC</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="37.3709" longitude="-121.9305"/>
+		</Fields>
+		<Facets>
+			<Field field="vendorId"/>
+		</Facets>
+	</Query>
+</ss:QueryRequests>, SAN JOSE, US, CA, SJC, 4084521100, ET, ETSJC, 1659 AIRPORT BLVD STE 5, 95110</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalMultSearchService()'><b>reCarRentalMultSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 4, 4, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="car_rental_v1" queryID="0" type="carrental">
+		<Records maxResults="1000" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>1000.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="33.4376" longitude="-112.0312"/>
+		</GlobalParameters>
+		<Sorting>
+			<ByDistance/>
+		</Sorting>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Group operation="AND">
+						<Match exact="true" field="reardenProviderId" wildcard="false">10101
+						</Match>
+						<Match exact="true" field="status" wildcard="false">ACTIVE</Match>
+					</Group>
+					<Proximity distance="1000.0" distanceUOM="mi" latitude="33.4376" longitude="-112.0312"/>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="oagId" wildcard="false">ZRPHX</Match>
+					<Match exact="false" field="oagId" wildcard="false">ZIPHX</Match>
+					<Match exact="false" field="oagId" wildcard="false">ETPHX</Match>
+					<Match exact="false" field="oagId" wildcard="false">ZDPHX</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="33.4376" longitude="-112.0312"/>
+		</Fields>
+		<Facets>
+			<Field field="vendorId"/>
+		</Facets>
+	</Query>
+</ss:QueryRequests>, PHOENIX, US, AZ, PHX, 866-434-2226, ZR, ZRPHX, 1805 E SKY HARBOR CIRCLE SOUTH, 85034-4805</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalMultSearchService()'><b>reCarRentalMultSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 4, 4, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="car_rental_v1" queryID="0" type="carrental">
+		<Records maxResults="1000" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>1000.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="41.9798" longitude="-87.882"/>
+		</GlobalParameters>
+		<Sorting>
+			<ByDistance/>
+		</Sorting>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Group operation="AND">
+						<Match exact="true" field="reardenProviderId" wildcard="false">10101
+						</Match>
+						<Match exact="true" field="status" wildcard="false">ACTIVE</Match>
+					</Group>
+					<Proximity distance="1000.0" distanceUOM="mi" latitude="41.9798" longitude="-87.882"/>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="oagId" wildcard="false">ZIORD</Match>
+					<Match exact="false" field="oagId" wildcard="false">ZDORD</Match>
+					<Match exact="false" field="oagId" wildcard="false">ETORD</Match>
+					<Match exact="false" field="oagId" wildcard="false">ZRORD</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="41.9798" longitude="-87.882"/>
+		</Fields>
+		<Facets>
+			<Field field="vendorId"/>
+		</Facets>
+	</Query>
+</ss:QueryRequests>, CHICAGO, US, IL, ORD, 866-434-2226, ZR, ZRORD, 1 DOLLAR DRIVE, 60666-0000</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalMultSearchService()'><b>reCarRentalMultSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 4, 4, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="car_rental_v1" queryID="0" type="carrental">
+		<Records maxResults="1000" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>10.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="37.793873" longitude="-122.39246"/>
+		</GlobalParameters>
+		<Sorting>
+			<ByDistance/>
+		</Sorting>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Group operation="AND">
+						<Match exact="true" field="reardenProviderId" wildcard="false">10101
+						</Match>
+						<Match exact="true" field="status" wildcard="false">ACTIVE</Match>
+					</Group>
+					<Proximity distance="10.0" distanceUOM="mi" latitude="37.793873" longitude="-122.39246"/>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="vendorId" wildcard="false">zd</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="37.793873" longitude="-122.39246"/>
+		</Fields>
+		<Facets>
+			<Field field="vendorId"/>
+		</Facets>
+	</Query>
+</ss:QueryRequests>, BERKELEY, US, CA, OAK, 510-524-7237, ZD, ZDOAKN001, 600 GILMAN STREET, 94710-0000</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalMultSearchService()'><b>reCarRentalMultSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 4, 4, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="car_rental_v1" queryID="0" type="carrental">
+		<Records maxResults="1000" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>10.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="53.430378" longitude="-2.991455"/>
+		</GlobalParameters>
+		<Sorting>
+			<ByDistance/>
+		</Sorting>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Group operation="AND">
+						<Match exact="true" field="reardenProviderId" wildcard="false">10101
+						</Match>
+						<Match exact="true" field="status" wildcard="false">ACTIVE</Match>
+					</Group>
+					<Proximity distance="10.0" distanceUOM="mi" latitude="53.430378" longitude="-2.991455"/>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="vendorId" wildcard="false">et</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="53.430378" longitude="-2.991455"/>
+		</Fields>
+		<Facets>
+			<Field field="vendorId"/>
+		</Facets>
+	</Query>
+</ss:QueryRequests>, LIVERPOOL AIRPORT, GB, ENG, LPL, 0151-4866600, ET, ETLPL, CAR HIRE CENTRE, L24 1YD</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalMultSearchService()'><b>reCarRentalMultSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 4, 4, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="car_rental_v1" queryID="0" type="carrental">
+		<Records maxResults="1000" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>10.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="37.789753" longitude="-122.394066"/>
+		</GlobalParameters>
+		<Sorting>
+			<ByDistance/>
+		</Sorting>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Group operation="AND">
+						<Match exact="true" field="reardenProviderId" wildcard="false">10101
+						</Match>
+						<Match exact="true" field="status" wildcard="false">ACTIVE</Match>
+					</Group>
+					<Proximity distance="10.0" distanceUOM="mi" latitude="37.789753" longitude="-122.394066"/>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="vendorId" wildcard="false">zd</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="37.789753" longitude="-122.394066"/>
+		</Fields>
+		<Facets>
+			<Field field="vendorId"/>
+		</Facets>
+	</Query>
+</ss:QueryRequests>, BERKELEY, US, CA, OAK, 510-524-7237, ZD, ZDOAKN001, 600 GILMAN STREET, 94710-0000</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalMultSearchService()'><b>reCarRentalMultSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 4, 4, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="car_rental_v1" queryID="0" type="carrental">
+		<Records maxResults="1000" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>1000.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="37.6148" longitude="-122.3918"/>
+		</GlobalParameters>
+		<Sorting>
+			<ByDistance/>
+		</Sorting>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Group operation="AND">
+						<Match exact="true" field="reardenProviderId" wildcard="false">10101
+						</Match>
+						<Match exact="true" field="status" wildcard="false">ACTIVE</Match>
+					</Group>
+					<Proximity distance="1000.0" distanceUOM="mi" latitude="37.6148" longitude="-122.3918"/>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="oagId" wildcard="false">ZDSFO</Match>
+					<Match exact="false" field="oagId" wildcard="false">ZRSFO</Match>
+					<Match exact="false" field="oagId" wildcard="false">ETSFO</Match>
+					<Match exact="false" field="oagId" wildcard="false">ZISFO</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="37.6148" longitude="-122.3918"/>
+		</Fields>
+		<Facets>
+			<Field field="vendorId"/>
+		</Facets>
+	</Query>
+</ss:QueryRequests>, SAN FRANCISCO, US, CA, SFO, 6506979200, ET, ETSFO, 780 NORTH MCDONNELL RD, 94128</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalMulty6SearchService()'><b>reCarRentalMulty6SearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 6, 6, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="car_rental_v1" queryID="0" type="carrental">
+		<Records maxResults="1000" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>10.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="37.789753" longitude="-122.394066"/>
+		</GlobalParameters>
+		<Sorting>
+			<ByDistance/>
+		</Sorting>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Group operation="AND">
+						<Match exact="true" field="reardenProviderId" wildcard="false">10101
+						</Match>
+						<Match exact="true" field="status" wildcard="false">ACTIVE</Match>
+					</Group>
+					<Proximity distance="10.0" distanceUOM="mi" latitude="37.789753" longitude="-122.394066"/>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="vendorId" wildcard="false">zi</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="37.789753" longitude="-122.394066"/>
+		</Fields>
+		<Facets>
+			<Field field="vendorId"/>
+		</Facets>
+	</Query>
+</ss:QueryRequests>, SAN FRANCISCO, US, CA, SFO, 650-588-5585, ZI, ZISFOC014, 230 HARBOR WAY, 94080-6881</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalMulty6SearchService()'><b>reCarRentalMulty6SearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 6, 6, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="car_rental_v1" queryID="0" type="carrental">
+		<Records maxResults="1000" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>10.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="37.793873" longitude="-122.39246"/>
+		</GlobalParameters>
+		<Sorting>
+			<ByDistance/>
+		</Sorting>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Group operation="AND">
+						<Match exact="true" field="reardenProviderId" wildcard="false">10101
+						</Match>
+						<Match exact="true" field="status" wildcard="false">ACTIVE</Match>
+					</Group>
+					<Proximity distance="10.0" distanceUOM="mi" latitude="37.793873" longitude="-122.39246"/>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="vendorId" wildcard="false">zi</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="37.793873" longitude="-122.39246"/>
+		</Fields>
+		<Facets>
+			<Field field="vendorId"/>
+		</Facets>
+	</Query>
+</ss:QueryRequests>, SAN FRANCISCO, US, CA, SFO, 650-588-5585, ZI, ZISFOC014, 230 HARBOR WAY, 94080-6881</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalMultySearchService()'><b>reCarRentalMultySearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 2, 2, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="car_rental_v1" queryID="0" type="carrental">
+		<Records maxResults="1000" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>1000.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="19.4353" longitude="-99.0728"/>
+		</GlobalParameters>
+		<Sorting>
+			<ByDistance/>
+		</Sorting>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Group operation="AND">
+						<Match exact="true" field="reardenProviderId" wildcard="false">10101
+						</Match>
+						<Match exact="true" field="status" wildcard="false">ACTIVE</Match>
+					</Group>
+					<Proximity distance="1000.0" distanceUOM="mi" latitude="19.4353" longitude="-99.0728"/>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="oagId" wildcard="false">ZRMEX</Match>
+					<Match exact="false" field="oagId" wildcard="false">ZIMEX</Match>
+					<Match exact="false" field="oagId" wildcard="false">ZDMEX</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="19.4353" longitude="-99.0728"/>
+		</Fields>
+		<Facets>
+			<Field field="vendorId"/>
+		</Facets>
+	</Query>
+</ss:QueryRequests>, MEXICO CITY, MX, null, MEX, 52-5557-843011, ZD, ZDMEX, BENITO JUAREZ INTERNATIONAL AIRPORT, 15520</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalMultySearchService()'><b>reCarRentalMultySearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 2, 2, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="car_rental_v1" queryID="0" type="carrental">
+		<Records maxResults="1000" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>10.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="37.793873" longitude="-122.39246"/>
+		</GlobalParameters>
+		<Sorting>
+			<ByDistance/>
+		</Sorting>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Group operation="AND">
+						<Match exact="true" field="reardenProviderId" wildcard="false">10101
+						</Match>
+						<Match exact="true" field="status" wildcard="false">ACTIVE</Match>
+					</Group>
+					<Proximity distance="10.0" distanceUOM="mi" latitude="37.793873" longitude="-122.39246"/>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="vendorId" wildcard="false">zr</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="37.793873" longitude="-122.39246"/>
+		</Fields>
+		<Facets>
+			<Field field="vendorId"/>
+		</Facets>
+	</Query>
+</ss:QueryRequests>, SAN FRANCISCO, US, CA, SFO, 866 434-2226, ZR, ZRSFOC003, 2500 MASON STREET, 941030000</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalMultySearchService()'><b>reCarRentalMultySearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 2, 2, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="car_rental_v1" queryID="0" type="carrental">
+		<Records maxResults="1000" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>10.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="37.789753" longitude="-122.394066"/>
+		</GlobalParameters>
+		<Sorting>
+			<ByDistance/>
+		</Sorting>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Group operation="AND">
+						<Match exact="true" field="reardenProviderId" wildcard="false">10101
+						</Match>
+						<Match exact="true" field="status" wildcard="false">ACTIVE</Match>
+					</Group>
+					<Proximity distance="10.0" distanceUOM="mi" latitude="37.789753" longitude="-122.394066"/>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="vendorId" wildcard="false">zr</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="37.789753" longitude="-122.394066"/>
+		</Fields>
+		<Facets>
+			<Field field="vendorId"/>
+		</Facets>
+	</Query>
+</ss:QueryRequests>, SAN FRANCISCO, US, CA, SFO, 866 434-2226, ZR, ZRSFOC003, 2500 MASON STREET, 941030000</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSearchService()'><b>reCarRentalSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 1, 1, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="car_rental_v1" queryID="0" type="carrental">
+		<Records maxResults="1000" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>1000.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="43.5042" longitude="-114.3083"/>
+		</GlobalParameters>
+		<Sorting>
+			<ByDistance/>
+		</Sorting>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Group operation="AND">
+						<Match exact="true" field="reardenProviderId" wildcard="false">10101
+						</Match>
+						<Match exact="true" field="status" wildcard="false">ACTIVE</Match>
+					</Group>
+					<Proximity distance="1000.0" distanceUOM="mi" latitude="43.5042" longitude="-114.3083"/>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="oagId" wildcard="false">ZDSUN</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="43.5042" longitude="-114.3083"/>
+		</Fields>
+		<Facets>
+			<Field field="vendorId"/>
+		</Facets>
+	</Query>
+</ss:QueryRequests>, HAILEY, US, ID, SUN, 208 788 0012, ZD, ZDSUN, 1616 AIRPORT WAY, 83333-0000</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSearchService()'><b>reCarRentalSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 1, 1, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="car_rental_v1" queryID="0" type="carrental">
+		<Records maxResults="1000" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>1000.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="48.1111" longitude="16.5583"/>
+		</GlobalParameters>
+		<Sorting>
+			<ByDistance/>
+		</Sorting>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Group operation="AND">
+						<Match exact="true" field="reardenProviderId" wildcard="false">10101
+						</Match>
+						<Match exact="true" field="status" wildcard="false">ACTIVE</Match>
+					</Group>
+					<Proximity distance="1000.0" distanceUOM="mi" latitude="48.1111" longitude="16.5583"/>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="oagId" wildcard="false">ZDVIE</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="48.1111" longitude="16.5583"/>
+		</Fields>
+		<Facets>
+			<Field field="vendorId"/>
+		</Facets>
+	</Query>
+</ss:QueryRequests>, VIENNA, AT, null, VIE, 43 170 0732711, ZD, ZDVIE, VIENNA AIRPORT, 1300</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ZLPHX, PHOENIX, US, AZ, PHX, 8888266890, ZL, ZLPHX, 1805 E SKY HARBOR CIR S, 85034</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ETBLV, MASCOUTAH, US, IL, BLV, 6186225134, ET, ETBLV, 9768 AIRPORT BLVD., 62258</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ZDLAX, LOS ANGELES, US, CA, LAX, 310-642-4500, ZD, ZDLAX, 9775 AIRPORT BLVD, 90045-0000</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ZRLAX, LOS ANGELES, US, CA, LAX, 866-434-2226, ZR, ZRLAX, 5630 ARBOR VITAE STREET, 90045-0000</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ETLAX, LOS ANGELES, US, CA, LAX, 3106495400, ET, ETLAX, 8734 BELLANCA AVE, 90045</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ZILAX, LOS ANGELES, US, CA, LAX, 310-342-9200, ZI, ZILAX, 9217 AIRPORT BLVD, 90045-4598</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ZDSFO, SAN FRANCISCO, US, CA, SFO, 650-877-0998, ZD, ZDSFO, 780 MCDONNELL ROAD, 94128-0000</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ALSFO, SAN FRANCISCO, US, CA, SFO, 8888266893, AL, ALSFO, 780 NORTH MCDONNELL RD, 94128</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ETSFO, SAN FRANCISCO, US, CA, SFO, 6506979200, ET, ETSFO, 780 NORTH MCDONNELL RD, 94128</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ZLSJC, SAN JOSE, US, CA, SJC, 8888266890, ZL, ZLSJC, 1659 AIRPORT BLVD STE 8, 95110</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ZICHIS001, ORLAND PARK, US, IL, CHI, 708-873-9882, ZI, ZICHIS001, 7170 WEST 159TH ST, 60462-5204</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ETYTON091, EAST YORK, CA, ON, YTO, 4164253777, ET, ETYTON091, 121 LAIRD DR, M4G3T7</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ETEWRN020, WAYNE, US, NJ, EWR, 9736335100, ET, ETEWRN020, 1546 STATE ROUTE 23, 07470</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ZERICC012, RICHMOND, US, VA, RIC, 804-270-3436, ZE, ZERICC012, 8021 WEST BROAD STREET, 232940000</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ZEMLIW019, MILAN, US, IL, MLI, 309-762-9429, ZE, ZEMLIW019, 5600 69TH AVENUE, 61264</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ZESANN023, POWAY, US, CA, SAN, 858-679-0576, ZE, ZESANN023, 12963 POWAY ROAD, 92064</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ZEDBQC037, DUBUQUE, US, IA, DBQ, null, ZE, ZEDBQC037, 11000 AIRPORT ROAD, 52003</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ETMOT, MINOT, US, ND, MOT, 7014209867, ET, ETMOT, 25 AIRPORT RD STE 13, 58703</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ZLMOT, MINOT, US, ND, MOT, 7018391982, ZL, ZLMOT, 25 AIRPORT ROAD STE 19, 58703</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ETLYH, LYNCHBURG, US, VA, LYH, 434-237-5656, ET, ETLYH, 2415 WARDS RD, 24502-2103</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ZLHVNC021, NEW HAVEN, US, CT, HVN, 888-826-6890, ZL, ZLHVNC021, 255 CROWN STREET, 06511-0000</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ETJFK, JAMAICA, US, NY, JFK, 8446481609, ET, ETJFK, BUILDING 69 FEDERAL CIRCLE, 11430</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ZLSFO, SAN FRANCISCO, US, CA, SFO, 8888266890, ZL, ZLSFO, 780 NORTH MCDONNELL RD, 94128</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ZLJFK, JAMAICA, US, NY, JFK, 8446481610, ZL, ZLJFK, BUILDING 308 FEDERAL CIRCLE, 11430</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ZICHIS001, ORLAND PARK, US, IL, CHI, 708-873-9882, ZI, ZICHIS001, 7170 WEST 159TH ST, 60462-5204</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reCarRentalSolorSearchServiceTest()'><b>reCarRentalSolorSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree01.scqa.rden.us:8080/search/carrental/select/?q=oagId:ETSFOS029, REDWOOD CITY, US, CA, SFO, 6503669200, ET, ETSFOS029, 345 EL CAMINO REAL, 94062</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reContactsSearchService()'><b>reContactsSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 1, 1, 200, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd">
+	<Query profile="contacts_list_view" queryID="Solr" type="contacts">
+		<Records maxResults="10" startAt="0"/>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Match exact="false" field="contact" wildcard="false">GayathriRagothaman</Match>
+					<Group operation="OR">
+						<Match exact="false" field="groupId" wildcard="false">-99</Match>
+					</Group>
+					<Match exact="false" field="active" wildcard="false">1</Match>
+				</Group>
+				<Group operation="OR">
+					<Group operation="AND">
+						<Match exact="false" field="siteId" wildcard="false">141570</Match>
+						<Match exact="false" field="type" wildcard="false">SITE</Match>
+					</Group>
+					<Group operation="AND">
+						<Match exact="false" field="siteId" wildcard="false">141570</Match>
+						<Match exact="false" field="userId" wildcard="false">2535961</Match>
+						<Match exact="false" field="type" wildcard="false">USER</Match>
+					</Group>
+					<Match exact="false" field="type" wildcard="false">GLOBAL</Match>
+				</Group>
+			</Group>
+		</Constraints>
+	</Query>
+</ss:QueryRequests>, 12873607, GayathriRagothaman, -99, 141570, true, USER</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reContactsSolorSearchService()'><b>reContactsSolorSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree05.scqa.rden.us:8080/search/contacts/select/?q=contactId:12873236, 200, 45487, -99, 2, true, nov21@prodSite.us, Stg3Shopping_SITE_givName1, Last_ProdSite1</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reContactsSolorSearchService()'><b>reContactsSolorSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree05.scqa.rden.us:8080/search/contacts/select/?q=contactId:12873237, 200, 45487, -99, 2, true, nov21@prodSite.ca, Stg3Shopping_SITE_givName2, Last_ProdSite2</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reContactsSolorSearchService()'><b>reContactsSolorSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree05.scqa.rden.us:8080/search/contacts/select/?q=contactId:12873243, 200, 45488, -99, 2, true, test5@test.com, Srinid, SDRD</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reContactsSolorSearchService()'><b>reContactsSolorSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree05.scqa.rden.us:8080/search/contacts/select/?q=contactId:12873244, 200, 45488, -99, 2, true, test6@test.com, Srinie, SDRE</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reContactsSolorSearchService()'><b>reContactsSolorSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree05.scqa.rden.us:8080/search/contacts/select/?q=contactId:12873245, 200, 45488, -99, 2, true, test7@test.com, null, SDRF</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reContactsSolorSearchService()'><b>reContactsSolorSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree05.scqa.rden.us:8080/search/contacts/select/?q=contactId:12873246, 200, 45488, -99, 2, true, test8@test.com, null, SDRG</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reContactsSolorSearchService()'><b>reContactsSolorSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree05.scqa.rden.us:8080/search/contacts/select/?q=contactId:12873247, 200, 45488, -99, 2, true, test9@test.com, Srinih, SDRH</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reContactsSolorSearchService()'><b>reContactsSolorSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree05.scqa.rden.us:8080/search/contacts/select/?q=contactId:12873248, 200, 45488, -99, 2, true, test10@test.com, Srinij, SDRJ</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reContactsSolorSearchService()'><b>reContactsSolorSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree05.scqa.rden.us:8080/search/contacts/select/?q=contactId:12873493, 200, 45722, -99, 414540, true, null, null, null</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reContactsSolorSearchService()'><b>reContactsSolorSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://scqalree05.scqa.rden.us:8080/search/contacts/select/?q=contactId:12873494, 200, 45722, -99, 414540, true, null, null, null</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reHPTSingleResultSearchServiceTest()'><b>reHPTSingleResultSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_detailView" queryID="unique" type="accommodation">
+		<Records maxResults="10" startAt="0"/>
+		<Constraints>
+			<Group operation="OR">
+				<Match exact="true" field="key" wildcard="false">7ecd90d0-8c8a-4ee3-8354-28d6e04358e0
+				</Match>
+			</Group>
+		</Constraints>
+		<Context>
+			<userId>8676781</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 0, 0</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reHPTSingleResultSearchServiceTest()'><b>reHPTSingleResultSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_detailView" queryID="unique" type="accommodation">
+		<Records maxResults="10" startAt="0"/>
+		<Constraints>
+			<Group operation="OR">
+				<Match exact="true" field="key" wildcard="false">2b9c7061-df49-4c33-ac96-0c828e2bc67
+				</Match>
+			</Group>
+		</Constraints>
+		<Context>
+			<userId>8676781</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 0, 0</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reHPTSingleResultSearchServiceTest()'><b>reHPTSingleResultSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_detailView" queryID="unique" type="accommodation">
+		<Records maxResults="10" startAt="0"/>
+		<Constraints>
+			<Group operation="OR">
+				<Match exact="true" field="key" wildcard="false">fe2d55ba-3168-40ee-8384-f20edc2cda7f
+				</Match>
+			</Group>
+		</Constraints>
+		<Context>
+			<userId>8676781</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 0, 0</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reHPTSingleResultSearchServiceTest()'><b>reHPTSingleResultSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_detailView" queryID="unique" type="accommodation">
+		<Records maxResults="10" startAt="0"/>
+		<Constraints>
+			<Group operation="OR">
+				<Match exact="true" field="key" wildcard="false">6c33fdde-756a-4aa9-b5cb-b0e2148249e5
+				</Match>
+			</Group>
+		</Constraints>
+		<Context>
+			<userId>8676781</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 0, 0</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reHotelPageResultSearchServiceTest()'><b>reHotelPageResultSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_detailView" queryID="unique" type="accommodation">
+		<Records maxResults="10" startAt="0"/>
+		<Constraints>
+			<Group operation="OR">
+				<Match exact="true" field="key" wildcard="false">772f4c8d-d732-4184-8fe3-1ff4bb916182
+				</Match>
+			</Group>
+		</Constraints>
+		<Context>
+			<userId>8676781</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 1, 1, Hilton Garden Inn Elmira/Corning, Horseheads, NY, US, 14845, 35 Arnot Rd, GI</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reHotelPageResultSearchServiceTest()'><b>reHotelPageResultSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_detailView" queryID="unique" type="accommodation">
+		<Records maxResults="10" startAt="0"/>
+		<Constraints>
+			<Group operation="OR">
+				<Match exact="true" field="key" wildcard="false">102ac4fe-b762-409c-ae9a-bc28afc6a44a
+				</Match>
+			</Group>
+		</Constraints>
+		<Context>
+			<userId>8676781</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 1, 1, Hampton Inn, Mount Pleasant, TX, US, 75455, 2504 W Ferguson St, HX</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reHotelSearchServiceTest()'><b>reHotelSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_listView" queryID="170011_null" type="accommodation">
+		<Records maxResults="15" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>25.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="42.35863" longitude="-71.0567"/>
+		</GlobalParameters>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Proximity distance="25.0" distanceUOM="mi" latitude="42.35863" longitude="-71.0567"/>
+					<Group operation="OR">
+						<Match exact="true" field="name_chain_code" wildcard="false">AL</Match>
+					</Group>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="xref_label" wildcard="false">SABREID</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="42.35863" longitude="-71.0567"/>
+		</Fields>
+		<Context>
+			<userId>170011</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 2, 2, aloft Lexington, Lexington, MA, US, 02421, 727 Marrett Rd - A, AL</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reHotelSearchServiceTest()'><b>reHotelSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_listView" queryID="170011_null" type="accommodation">
+		<Records maxResults="15" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>25.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="42.35863" longitude="-71.0567"/>
+		</GlobalParameters>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Proximity distance="25.0" distanceUOM="mi" latitude="42.35863" longitude="-71.0567"/>
+					<Group operation="OR">
+						<Match exact="true" field="name_chain_code" wildcard="false">AL</Match>
+					</Group>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="xref_label" wildcard="false">SABREID</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="42.35863" longitude="-71.0567"/>
+		</Fields>
+		<Context>
+			<userId>170011</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 2, 2, aloft Lexington, Lexington, MA, US, 02421, 727 Marrett Rd - A, AL</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reHotelSearchServiceTest()'><b>reHotelSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_listView" queryID="8676781_null" type="accommodation">
+		<Records maxResults="15" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>25.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="42.35863" longitude="-71.0567"/>
+		</GlobalParameters>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Proximity distance="25.0" distanceUOM="mi" latitude="42.35863" longitude="-71.0567"/>
+					<Group operation="OR">
+						<Match exact="true" field="name_chain_code" wildcard="false">AL</Match>
+					</Group>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="xref_label" wildcard="false">SABREID</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="42.35863" longitude="-71.0567"/>
+		</Fields>
+		<Context>
+			<userId>8676781</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 2, 2, aloft Lexington, Lexington, MA, US, 02421, 727 Marrett Rd - A, AL</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reHotelSingleResultSearchServiceTest()'><b>reHotelSingleResultSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_listView" queryID="8676781_LAX" type="accommodation">
+		<Records maxResults="1500" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>25.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="33.9456" longitude="-118.3923"/>
+		</GlobalParameters>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Proximity distance="25.0" distanceUOM="mi" latitude="33.9456" longitude="-118.3923"/>
+					<Group operation="AND">
+						<Match exact="true" field="name" wildcard="false">Sheraton Gateway
+						</Match>
+					</Group>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="xref_label" wildcard="false">SABREID
+					</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="33.9456" longitude="-118.3923"/>
+		</Fields>
+		<Context>
+			<userId>8676781</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 1, 1, Sheraton Gateway Los Angeles Hotel, Los Angeles, CA, US, 90045, 6101 W Century Blvd, SI</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reHotelSingleResultSearchServiceTest()'><b>reHotelSingleResultSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_listView" queryID="8676781_null" type="accommodation">
+		<Records maxResults="1500" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>25.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="37.793934" longitude="-122.39241"/>
+		</GlobalParameters>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Proximity distance="25.0" distanceUOM="mi" latitude="37.793934" longitude="-122.39241"/>
+					<Group operation="AND">
+						<Match exact="true" field="name" wildcard="false">Vitale</Match>
+					</Group>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="xref_label" wildcard="false">SABREID
+					</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="37.793934" longitude="-122.39241"/>
+		</Fields>
+		<Context>
+			<userId>8676781</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 1, 1, Hotel Vitale, San Francisco, CA, US, 94105, 8 Mission Street, JV</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reHotelSingleResultSearchServiceTest()'><b>reHotelSingleResultSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_listView" queryID="8676781_null" type="accommodation">
+		<Records maxResults="1500" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>25.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="42.35863" longitude="-71.0567"/>
+		</GlobalParameters>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Proximity distance="25.0" distanceUOM="mi" latitude="42.35863" longitude="-71.0567"/>
+					<Group operation="AND">
+						<Match exact="true" field="name" wildcard="false">ames</Match>
+					</Group>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="xref_label" wildcard="false">SABREID
+					</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="42.35863" longitude="-71.0567"/>
+		</Fields>
+		<Context>
+			<userId>8676781</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 1, 1, Ames Boston Hotel, Boston, MA, US, 02108, 1 Court Street, QQ</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reHotelSingleResultSearchServiceTest()'><b>reHotelSingleResultSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_listView" queryID="8676781_LAX" type="accommodation">
+		<Records maxResults="15" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>25.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="33.9456" longitude="-118.3923"/>
+		</GlobalParameters>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Proximity distance="25.0" distanceUOM="mi" latitude="33.9456" longitude="-118.3923"/>
+					<Group operation="OR">
+						<Match exact="true" field="name_chain_code" wildcard="false">YO
+						</Match>
+					</Group>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="xref_label" wildcard="false">SABREID
+					</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="33.9456" longitude="-118.3923"/>
+		</Fields>
+		<Context>
+			<userId>8676781</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 1, 1, Candlewood Suites LAX Hawthorne, Hawthorne, CA, US, 90250, 11410 Hawthorne Blvd, YO</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reHotelSingleResultSearchServiceTest()'><b>reHotelSingleResultSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_listView" queryID="8676781_null" type="accommodation">
+		<Records maxResults="15" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>25.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="37.793934" longitude="-122.39241"/>
+		</GlobalParameters>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Proximity distance="25.0" distanceUOM="mi" latitude="37.793934" longitude="-122.39241"/>
+					<Group operation="OR">
+						<Match exact="true" field="name_chain_code" wildcard="false">NZ
+						</Match>
+					</Group>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="xref_label" wildcard="false">SABREID
+					</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="37.793934" longitude="-122.39241"/>
+		</Fields>
+		<Context>
+			<userId>8676781</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 1, 1, Villa Montes Hotel, an Ascend Collection, San Bruno, CA, US, 94066, 620 El Camino Real, NZ</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reLocationSearchService()'><b>reLocationSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 1, 1, 200, <?xml version="1.0" encoding="UTF-8"?><ns2:QueryRequests xmlns:ns2="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="/gravel_suggest" queryID="123" type="location">
+		<Records maxResults="1" startAt="0"/>
+		<Constraints>
+			<Match exact="false" field="*" wildcard="false">LAX</Match>
+		</Constraints>
+	</Query>
+</ns2:QueryRequests>, Los Angeles, CA, LAX, Los Angeles International Airport, California, US, eb1939ef77cb4949e13fb077dd26b4a2</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reLocationSearchService()'><b>reLocationSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 1, 1, 200, <?xml version="1.0" encoding="UTF-8"?><ns2:QueryRequests xmlns:ns2="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="/gravel_suggest" queryID="123" type="location">
+		<Records maxResults="1" startAt="0"/>
+		<Constraints>
+			<Match exact="false" field="*" wildcard="false">SFO</Match>
+		</Constraints>
+	</Query>
+</ns2:QueryRequests>, San Francisco, CA, SFO, San Francisco International Airport, California, US, a2baff24fb7d6e1a352aba5d7f20037b</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reSearchServiceTest()'><b>reSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 8, 8, Ramada, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd">
+ 
+  <Query profile="listView" queryID="ample" type="accommodation">
+     <Constraints>
+        <Match exact="true" field="name">Ramada Inn</Match>
+     </Constraints>
+     <Fields>
+        <Field field="id"/>
+        <Field field="name"/>
+     </Fields>
+     <Highlight/>
+  </Query>
+ 
+</ss:QueryRequests></td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reTrainstationMultiSearchService()'><b>reTrainstationMultiSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 2, 2, 200, <?xml version="1.0" encoding="UTF-8"?><ns2:QueryRequests xmlns:ns2="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="train_station_list_view" queryID="0" type="trainstation">
+		<Records maxResults="25" startAt="0"/>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="OR">
+					<Match exact="false" field="city" wildcard="true">portl</Match>
+					<Match exact="false" field="refPoint" wildcard="true">portl</Match>
+					<Match exact="true" field="trainStationCode" wildcard="false">PORTL
+					</Match>
+				</Group>
+				<Match exact="false" field="supplier_trainStationCode" wildcard="true">2V</Match>
+			</Group>
+		</Constraints>
+	</Query>
+</ns2:QueryRequests>, Portland, 97209-3789, 503-273-4866, US, PDX, OR, 10557</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reTrainstationMultiSearchService()'><b>reTrainstationMultiSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 3, 3, 200, <?xml version="1.0" encoding="UTF-8"?><ns2:QueryRequests xmlns:ns2="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="train_station_list_view" queryID="0" type="trainstation">
+		<Records maxResults="150" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>8.045</searchRadius>
+			<distanceUnit>km</distanceUnit>
+			<searchPoint latitude="42.35269" longitude="-71.05543"/>
+		</GlobalParameters>
+		<Constraints>
+			<Group operation="AND">
+				<Proximity distance="8.045" distanceUOM="km" latitude="42.35269" longitude="-71.05543"/>
+				<Match exact="false" field="supplier_trainStationCode" wildcard="true">2V</Match>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="km" field="distance" latitude="42.35269" longitude="-71.05543"/>
+		</Fields>
+	</Query>
+</ns2:QueryRequests>, Boston, 02116-5162, 617-345-7998, US, BBY, MA, 10044</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reTrainstationMultiSearchService()'><b>reTrainstationMultiSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 2, 2, 200, <?xml version="1.0" encoding="UTF-8"?><ns2:QueryRequests xmlns:ns2="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="train_station_list_view" queryID="0" type="trainstation">
+		<Records maxResults="25" startAt="0"/>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="OR">
+					<Match exact="false" field="city" wildcard="true">portl</Match>
+					<Match exact="false" field="refPoint" wildcard="true">portl</Match>
+					<Match exact="true" field="trainStationCode" wildcard="false">PORTL
+					</Match>
+				</Group>
+				<Match exact="false" field="supplier_trainStationCode" wildcard="true">2V</Match>
+			</Group>
+		</Constraints>
+	</Query>
+</ns2:QueryRequests>, Portland, 97209-3789, 503-273-4866, US, PDX, OR, 10557</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reTrainstationMultiSearchService()'><b>reTrainstationMultiSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 9, 9, 200, <?xml version="1.0" encoding="UTF-8"?><ns2:QueryRequests xmlns:ns2="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="train_station_list_view" queryID="0" type="trainstation">
+		<Records maxResults="25" startAt="0"/>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="OR">
+					<Match exact="false" field="city" wildcard="true">union</Match>
+					<Match exact="false" field="refPoint" wildcard="true">union</Match>
+					<Match exact="true" field="trainStationCode" wildcard="false">UNION
+					</Match>
+				</Group>
+				<Match exact="false" field="supplier_trainStationCode" wildcard="true">2V</Match>
+			</Group>
+		</Constraints>
+	</Query>
+</ns2:QueryRequests>, Chicago, 60606, 312-655-2101, US, CHI, IL, 10102</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reTrainstationMultiSearchService()'><b>reTrainstationMultiSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 3, 3, 200, <?xml version="1.0" encoding="UTF-8"?><ns2:QueryRequests xmlns:ns2="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="train_station_list_view" queryID="0" type="trainstation">
+		<Records maxResults="150" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>8.045</searchRadius>
+			<distanceUnit>km</distanceUnit>
+			<searchPoint latitude="42.35269" longitude="-71.05543"/>
+		</GlobalParameters>
+		<Constraints>
+			<Group operation="AND">
+				<Proximity distance="8.045" distanceUOM="km" latitude="42.35269" longitude="-71.05543"/>
+				<Match exact="false" field="supplier_trainStationCode" wildcard="true">2V</Match>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="km" field="distance" latitude="42.35269" longitude="-71.05543"/>
+		</Fields>
+	</Query>
+</ns2:QueryRequests>, Boston, 02116-5162, 617-345-7998, US, BBY, MA, 10044</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reTrainstationMultiSearchService()'><b>reTrainstationMultiSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 9, 9, 200, <?xml version="1.0" encoding="UTF-8"?><ns2:QueryRequests xmlns:ns2="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="train_station_list_view" queryID="0" type="trainstation">
+		<Records maxResults="25" startAt="0"/>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="OR">
+					<Match exact="false" field="city" wildcard="true">union</Match>
+					<Match exact="false" field="refPoint" wildcard="true">union</Match>
+					<Match exact="true" field="trainStationCode" wildcard="false">UNION
+					</Match>
+				</Group>
+				<Match exact="false" field="supplier_trainStationCode" wildcard="true">2V</Match>
+			</Group>
+		</Constraints>
+	</Query>
+</ns2:QueryRequests>, Chicago, 60606, 312-655-2101, US, CHI, IL, 10102</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reTrainstationMultiSearchService()'><b>reTrainstationMultiSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 3, 3, 200, <?xml version="1.0" encoding="UTF-8"?><ns2:QueryRequests xmlns:ns2="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="train_station_list_view" queryID="0" type="trainstation">
+		<Records maxResults="150" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>8.045</searchRadius>
+			<distanceUnit>km</distanceUnit>
+			<searchPoint latitude="42.35269" longitude="-71.05543"/>
+		</GlobalParameters>
+		<Constraints>
+			<Group operation="AND">
+				<Proximity distance="8.045" distanceUOM="km" latitude="42.35269" longitude="-71.05543"/>
+				<Match exact="false" field="supplier_trainStationCode" wildcard="true">2V</Match>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="km" field="distance" latitude="42.35269" longitude="-71.05543"/>
+		</Fields>
+	</Query>
+</ns2:QueryRequests>, Boston, 02116-5162, 617-345-7998, US, BBY, MA, 10044</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reTrainstationMultiSearchService()'><b>reTrainstationMultiSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 2, 2, 200, <?xml version="1.0" encoding="UTF-8"?><ns2:QueryRequests xmlns:ns2="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="train_station_list_view" queryID="0" type="trainstation">
+		<Records maxResults="25" startAt="0"/>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="OR">
+					<Match exact="false" field="city" wildcard="true">portl</Match>
+					<Match exact="false" field="refPoint" wildcard="true">portl</Match>
+					<Match exact="true" field="trainStationCode" wildcard="false">PORTL
+					</Match>
+				</Group>
+				<Match exact="false" field="supplier_trainStationCode" wildcard="true">2V</Match>
+			</Group>
+		</Constraints>
+	</Query>
+</ns2:QueryRequests>, Portland, 97209-3789, 503-273-4866, US, PDX, OR, 10557</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reTrainstationMultiSearchService()'><b>reTrainstationMultiSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 9, 9, 200, <?xml version="1.0" encoding="UTF-8"?><ns2:QueryRequests xmlns:ns2="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="train_station_list_view" queryID="0" type="trainstation">
+		<Records maxResults="25" startAt="0"/>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="OR">
+					<Match exact="false" field="city" wildcard="true">union</Match>
+					<Match exact="false" field="refPoint" wildcard="true">union</Match>
+					<Match exact="true" field="trainStationCode" wildcard="false">UNION
+					</Match>
+				</Group>
+				<Match exact="false" field="supplier_trainStationCode" wildcard="true">2V</Match>
+			</Group>
+		</Constraints>
+	</Query>
+</ns2:QueryRequests>, Chicago, 60606, 312-655-2101, US, CHI, IL, 10102</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reTrainstationSearchService()'><b>reTrainstationSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 1, 1, 200, <?xml version="1.0" encoding="UTF-8"?><ns2:QueryRequests xmlns:ns2="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="train_station_list_view" queryID="0" type="trainstation">
+		<Records maxResults="20" startAt="0"/>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="OR">
+					<Match exact="false" field="city" wildcard="true">nyp</Match>
+					<Match exact="false" field="refPoint" wildcard="true">nyp</Match>
+					<Match exact="true" field="trainStationCode" wildcard="false">NYP</Match>
+				</Group>
+				<Match exact="false" field="supplier_trainStationCode" wildcard="true">2V</Match>
+			</Group>
+		</Constraints>
+	</Query>
+</ns2:QueryRequests>, New York, 10001, 212-630-6400, US, NYP, NY, 10514</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reTrainstationSearchService()'><b>reTrainstationSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 1, 1, 200, <?xml version="1.0" encoding="UTF-8"?><ns2:QueryRequests xmlns:ns2="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="train_station_list_view" queryID="0" type="trainstation">
+		<Records maxResults="10" startAt="0"/>
+		<Constraints>
+			<Match exact="true" field="trainStationCode5" wildcard="false">USNYP
+			</Match>
+		</Constraints>
+	</Query>
+</ns2:QueryRequests>, New York, 10001, 212-630-6400, US, NYP, NY, 10514</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reTrainstationSearchService()'><b>reTrainstationSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 1, 1, 200, <?xml version="1.0" encoding="UTF-8"?><ns2:QueryRequests xmlns:ns2="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="train_station_list_view" queryID="0" type="trainstation">
+		<Records maxResults="10" startAt="0"/>
+		<Constraints>
+			<Match exact="true" field="trainStationCode5" wildcard="false">USNYP
+			</Match>
+		</Constraints>
+	</Query>
+</ns2:QueryRequests>, New York, 10001, 212-630-6400, US, NYP, NY, 10514</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reTrainstationSearchService()'><b>reTrainstationSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 1, 1, 200, <?xml version="1.0" encoding="UTF-8"?><ns2:QueryRequests xmlns:ns2="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="train_station_list_view" queryID="0" type="trainstation">
+		<Records maxResults="20" startAt="0"/>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="OR">
+					<Match exact="false" field="city" wildcard="true">nyp</Match>
+					<Match exact="false" field="refPoint" wildcard="true">nyp</Match>
+					<Match exact="true" field="trainStationCode" wildcard="false">NYP
+					</Match>
+				</Group>
+				<Match exact="false" field="supplier_trainStationCode" wildcard="true">2V</Match>
+			</Group>
+		</Constraints>
+	</Query>
+</ns2:QueryRequests>, New York, 10001, 212-630-6400, US, NYP, NY, 10514</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RENightlySuiteTest.reTrainstationSearchService()'><b>reTrainstationSearchService</b><br>Test class: com.deem.joltage.platformtests.test.RENightlySuiteTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, 1, 1, 200, <?xml version="1.0" encoding="UTF-8"?><ns2:QueryRequests xmlns:ns2="http://www.reardencommerce.com/SearchService_v2">
+	<Query profile="train_station_list_view" queryID="0" type="trainstation">
+		<Records maxResults="10" startAt="0"/>
+		<Constraints>
+			<Match exact="true" field="trainStationCode5" wildcard="false">USNYP
+			</Match>
+		</Constraints>
+	</Query>
+</ns2:QueryRequests>, New York, 10001, 212-630-6400, US, NYP, NY, 10514</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RENightlySuiteTest@1fdfa36</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.removeApproverChainTest()'><b>removeApproverChainTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user/3685771?site_id=32265&src=end-user:profile-ui, 200, {"approvers":{"expenseApproverId":"-1"}}, null</td>
+<td></td>
+<td>14</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.removeApproverChainTest()'><b>removeApproverChainTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user/3685771?site_id=32265&src=end-user:profile-ui, 200, {"approvers":{"expenseApproverId":"3724591"}}, 3724591</td>
+<td></td>
+<td>15</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.removeApproverChainTest()'><b>removeApproverChainTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user/3737311?site_id=32265&src=end-user:profile-ui, 200, {"approvers":{"expenseApproverId":"-1"}}, null</td>
+<td></td>
+<td>15</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.removeApproverChainTest()'><b>removeApproverChainTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user/3737311?site_id=32265&src=end-user:profile-ui, 200, {"approvers":{"expenseApproverId":"3724591"}}, 3724591</td>
+<td></td>
+<td>15</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.removeApproverChainTest()'><b>removeApproverChainTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user/3737311?site_id=32265&src=end-user:profile-ui, 200, {"approvers":{"expenseApproverId":"3685771"}}, 3685771</td>
+<td></td>
+<td>14</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.updateBatchUsersTest()'><b>updateBatchUsersTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080//rest/profile/users?src=end-user:profile-upload&site_id=53025, 200, {  "users":[    {      "core":{        "userId":8688571      },      "name":{        "given":"mahesh"      }    },    {      "core":{        "userId":8699881      },      "name":{        "given":"mahesh"      }    }  ]}, maheshwar.gade@deem.com, 53025, 8688571, 24045, gademahesh, mahesh, maheshwa@deem.com, 53025, 8699881, 24045, mahesh, mahesh</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.updateUserRoleServiceTest()'><b>updateUserRoleServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user/3695941?site_id=32265&src=end-user:profile-ui, 200, { "authorization": {  "registration": "NOT_STARTED",  "roles": [        {    "name": "ROLE_APPROVER"   }  ] }}, ROLE_APPROVER, END_USER, NOT_STARTED, false, false</td>
+<td></td>
+<td>15</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.updateUserRoleServiceTest()'><b>updateUserRoleServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user/3695941?site_id=32265&src=end-user:profile-ui, 200, { "authorization": {  "registration": "NOT_STARTED",  "roles": [        {    "name": "ROLE_APPROVER"   }  ] }}, ROLE_APPROVER, END_USER, NOT_STARTED, false, false</td>
+<td></td>
+<td>15</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.validateBatchUsersInfoTest()'><b>validateBatchUsersInfoTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/users?site_id=53025&user_ids=8699806,8699836&fg=core,employee,name, 200, 2162@deem.com, 53025, 8699806, 24045, 216gade, Mahesh, 2402@deem.com, 53025, 8699836, 24045, 240gade, Mahesh</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.validateUserInfoTest()'><b>validateUserInfoTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user/2157361?site_id=32265&g=employee&fg=core&fg=approvees&fg=authentication&fg=authorization&fg=businessContact&fg=creditCards&fg=display&fg=documents&fg=emergencyContact&fg=employee&fg=groupware&fg=legalPolicy&fg=name&fg=notification&fg=personal&fg=personalContact&fg=delegates&fg=airPreferences, ACTIVE, 32265, 2157361, US, END_USER, isaacnewqa, Isaac, indeever@gmail.com, null</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.UserProfileServiceTest.validateUserInfoTest()'><b>validateUserInfoTest</b><br>Test class: com.deem.joltage.platformtests.test.UserProfileServiceTest<br>Parameters: http://scqalgpe01.scqa.rden.us:8080/rest/profile/user/3695926?site_id=32265&g=employee&fg=core&fg=approvees&fg=authentication&fg=authorization&fg=businessContact&fg=creditCards&fg=display&fg=documents&fg=emergencyContact&fg=employee&fg=groupware&fg=legalPolicy&fg=name&fg=notification&fg=personal&fg=personalContact&fg=delegates&fg=airPreferences, ACTIVE, 32265, 3695926, US, END_USER, null, Ramesh, ramesh.kumar@deem7.com, LOWEST AVAILABLE</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.UserProfileServiceTest@19b619e</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/en/San%20Jose,%20California, 200, 37.3382082, -121.8863286, San Jose, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeAddress/in?countryRegion=CA&adminDistrict=Newfoundland&postalCode=A0A+2R0&locality=Holyrood&addressLine=PO+Box+583, 200, 48.6064556, -56.3330408, null, CA</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeAddress/br?countryRegion=US&adminDistrict=CA&postalCode=94404&locality=Foster+City&addressLine=1051+E+Hillsdale+Blvd, 200, 37.5597201, -122.2710097, Foster City, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeAddress/en?countryRegion=US&adminDistrict=MI&postalCode=&locality=Bad+Axe&addressLine=, 200, 43.8019592, -83.00077739999999, Bad Axe, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/ca/San%20Jose%2CCalifornia, 200, 37.3382082, -121.8863286, San Jose, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/in/San%20Jose%2CCalifornia, 200, 37.3382082, -121.8863286, San Jose, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/pl/San%20Jose%2CCalifornia, 200, 37.3382082, -121.8863286, San Jose, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/en/Mascow,Russia, 200, 55.755826, 37.6173, Moscow, RU</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/br/San%20Jose%2CCalifornia, 200, 37.3382082, -121.8863286, San Jose, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/en/,SFO, 200, 37.6213129, -122.3789554, SF, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/en/Bangalore,New%20York, 200, 40.7127837, -74.0059413, New York, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/en/bangalore, 200, 12.9715987, 77.5945627, Bengaluru, IN</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/en/,texas, 200, 31.9685988, -99.9018131, null, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/us/56000, 200, 3.090795, 101.7258578, Kuala Lumpur, MY</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/en/San%20Jose,, 200, 37.3382082, -121.8863286, San Jose, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/en/,California, 200, 36.778261, -119.4179324, null, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/en/,New%20York, 200, 40.7127837, -74.0059413, New York, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/en/Sunnyvale,, 200, 37.36883, -122.0363496, Sunnyvale, US</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/67/Moscow,Russia, 200, 55.755826, 37.6173, Moscow, RU</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/en/Bangalore,%20Mysore, 200, 12.9715987, 77.5945627, Bengaluru, IN</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/en/Bangalore,New%20York, 200, 40.7127837, -74.0059413, New York, US</td>
+<td></td>
+<td>3</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedGeocodeQueryTest()'><b>validatedGeocodeQueryTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case used to verify the Geocode.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/geocodeQuery/en/BYE,Lebanon, 200, 36.0748705, -78.9294032, Durham, US</td>
+<td></td>
+<td>3</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest()'><b>validatedPostalAddressServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Verify the postal addres in responce.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=1051%20E.%20Hillsdale%20Blvd&l2=Suite%20600&ct=Foster%20City&pc=94404&sc=CA&cc=US, 200, true, foster city, US, false, CA, 1051 E HILLSDALE BLVD, Suite 600</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest()'><b>validatedPostalAddressServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Verify the postal addres in responce.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=1051+E+HILLSDALE+BLVD&l2=STE+600&ct=FOSTER+CITY&pc=94404&sc=CA&cc=US, 200, true, foster city, US, false, CA, 1051 E HILLSDALE BLVD, STE 600</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest()'><b>validatedPostalAddressServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Verify the postal addres in responce.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=19+10TH+ST+NE&l2=STE+600&ct=ATLANTA&pc=30309&sc=GA&cc=US, 200, true, atlanta, US, false, GA, 19 10TH ST NE, STE 600</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest()'><b>validatedPostalAddressServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Verify the postal addres in responce.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=500+AVE+DE+LA+CONSTITUCION&l2=&ct=SAN+JUAN&pc=00901&sc=PR&cc=PR, 200, true, san juan, PR, false, PR, 500 AVE DE LA CONSTITUCION, </td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest()'><b>validatedPostalAddressServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Verify the postal addres in responce.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=PO+BOX+506092&l2=&ct=SAIPAN&pc=96950&sc=MP&cc=MP, 200, true, saipan, MP, false, MP, PO BOX 506092, </td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest()'><b>validatedPostalAddressServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Verify the postal addres in responce.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=701%20First%20Ave&ct=Sunnyvale&pc=94089&sc=CA&cc=US, 200, true, sunnyvale, US, false, CA, 701 FIRST AVE, null</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest()'><b>validatedPostalAddressServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Verify the postal addres in responce.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=41+locust+ave&l2=&ct=lexington&pc=00802&sc=MA&cc=US, 200, true, lexington, US, false, MA, 41 LOCUST AVE, Suite 600</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest()'><b>validatedPostalAddressServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Verify the postal addres in responce.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=150+Maggi+Court&l2=&ct=Los+Gatos&pc=95030&sc=CA&cc=US, 200, true, los gatos, US, false, CA, 150 MAGGI CT, Suite 600</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest()'><b>validatedPostalAddressServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Verify the postal addres in responce.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=500+S+Bronough+St&l2=Bronough+St&ct=Tallahassee&pc=32399&sc=FL&cc=US, 200, true, tallahassee, US, false, FL, 500 S BRONOUGH ST BRONOUGH ST, Suite 600</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest()'><b>validatedPostalAddressServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Verify the postal addres in responce.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=701+North&l2=4th+Street&ct=Baton+Rouge&pc=70802&sc=LA&cc=US, 200, true, baton rouge, US, false, LA, 701 N 4TH ST, Suite 600</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest()'><b>validatedPostalAddressServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Verify the postal addres in responce.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=Fax+Cargo+Inc&l2=P.O.+Box+825&ct=Pago+Pago&pc=96799&sc=American+Samoa&cc=AS, 200, true, pago pago, AS, false, AS, PO BOX 825, Suite 600</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest()'><b>validatedPostalAddressServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Verify the postal addres in responce.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=500+Constitution+Ave&l2=&ct=San+Juan&pc=00901&sc=PR&cc=PR, 200, true, san juan, PR, false, PR, 500 AVE DE LA CONSTITUCION, Suite 600</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest()'><b>validatedPostalAddressServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Verify the postal addres in responce.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=Baker+International+Inc.+dba+J.L.Baker&l2=PO+Box+506092&ct=Saipan&pc=96950&sc=Northern+Mariana+Islands&cc=MP, 200, true, saipan, MP, false, MP, PO BOX 506092, Suite 600</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedPostalAddressServiceTest()'><b>validatedPostalAddressServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Verify the postal addres in responce.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/postal?l1=P.o.box+10016&l2=pmb+1019&ct=Sapan&pc=96950&sc=np&cc=MP, 200, true, saipan, MP, false, MP, PO BOX 10016, Suite 600</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedReverseGeocode()'><b>validatedReverseGeocode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based on latitude and logutude.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/reverseGeocode/en/33.9456/-118.3923, 200, 6141-6149 W Century Blvd, Los Angeles, CA 90045, USA, 90045, 33.9455903, -118.3922999, US, Los Angeles, CA, Los Angeles County, null</td>
+<td></td>
+<td>1</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedReverseGeocode()'><b>validatedReverseGeocode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based on latitude and logutude.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/reverseGeocode/en/45.423361/-75.698537, 200, 109 Wellington St, Ottawa, ON K1A, Canada, K1A, 45.4232904, -75.69847490000001, CA, Ottawa, ON, Ottawa Division, null</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedReverseGeocode()'><b>validatedReverseGeocode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based on latitude and logutude.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/reverseGeocode/is/45.423361/-75.698537, 200, 109 Wellington St, Ottawa, ON K1A, Canada, K1A, 45.4232904, -75.69847490000001, CA, Ottawa, ON, Ottawa Division, null</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedReverseGeocode()'><b>validatedReverseGeocode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based on latitude and logutude.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/reverseGeocode/ga/45.423361/-75.698537, 200, 109 Wellington St, Ottawa, ON K1A, Canada, K1A, 45.4232904, -75.69847490000001, CA, Ottawa, ON, Ottawa Division, null</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedReverseGeocode()'><b>validatedReverseGeocode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based on latitude and logutude.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/reverseGeocode/en/37.33858108520508/-121.88556671142578, 200, 233 E Santa Clara St, San Jose, CA 95113, USA, 95113, 37.3385573, -121.8855721, US, San Jose, CA, Santa Clara County, null</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedReverseGeocode()'><b>validatedReverseGeocode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based on latitude and logutude.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/reverseGeocode/en/46.16358947753906/5.571040153503418, 200, 29 Route de Lyon, 01460 Port, France, 01460, 46.16355679999999, 5.5712867, FR, Port, Auvergne-Rhône-Alpes, Ain, null</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedReverseGeocode()'><b>validatedReverseGeocode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based on latitude and logutude.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/reverseGeocode/en/49.45166015625/-110.81298828125, 200, Red Coat Trail, Orion, AB T0K 1S0, Canada, T0K 1S0, 49.4443266, -110.8129653, CA, Orion, AB, Division No. 1, null</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedReverseGeocode()'><b>validatedReverseGeocode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based on latitude and logutude.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/reverseGeocode/en/12.966970443725586/77.5872802734375, 200, B-Trac Signal, Corporation Cir, Cubbonpete, Nagarathpete, Bengaluru, Karnataka 560002, India, 560002, 12.9669943, 77.5872957, IN, Bengaluru, KA, Bangalore Urban, null</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedReverseGeocode()'><b>validatedReverseGeocode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based on latitude and logutude.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/reverseGeocode/en/16.303796768188477/80.4421157836914, 200, 5th Lane, Sali Pet, Arundelpet, Guntur, Andhra Pradesh 522002, India, 522002, 16.3039393, 80.44214389999999, IN, GNT, AP, Guntur, null</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.LocationServiceTest.validatedReverseGeocode()'><b>validatedReverseGeocode</b><br>Test class: com.deem.joltage.platformtests.test.LocationServiceTest<br>Test method: Test case is used to get address based on latitude and logutude.<br>Parameters: http://fls-qa.scqa.rden.us:8080/location-rest/address/reverseGeocode/en/12.966970443725586/5.571040153503418, 200, Dange-Sunkandu-Bara Road, Dange, Nigeria, null, 12.9469981, 5.536436399999999, NG, Dange, Sokoto, null, null</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.LocationServiceTest@d20b73</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RESearchServiceTest.categoryServiceTest()'><b>categoryServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RESearchServiceTest<br>Parameters: http://scqalres01.scqa.rden.us:8080/category-service/rest/categories/item/depth/0, Industrial Supplies</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RESearchServiceTest@135fd95</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RESearchServiceTest.categoryServiceTest()'><b>categoryServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RESearchServiceTest<br>Parameters: http://scqalres01.scqa.rden.us:8080/category-service/rest/categories/item/depth/0, Restaurant and Kitchen Supplies</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RESearchServiceTest@135fd95</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.NotificationServiceTest.reHotelSearchServiceTest()'><b>reHotelSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.NotificationServiceTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_listView" queryID="170011_null" type="accommodation">
+		<Records maxResults="1500" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>25.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="37.793934" longitude="-122.39241"/>
+		</GlobalParameters>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Proximity distance="25.0" distanceUOM="mi" latitude="37.793934" longitude="-122.39241"/>
+					<Group operation="AND">
+						<Match exact="true" field="name" wildcard="false">Vitale</Match>
+					</Group>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="xref_label" wildcard="false">SABREID</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="37.793934" longitude="-122.39241"/>
+		</Fields>
+		<Context>
+			<userId>170011</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 1, 1, Hotel Vitale, San Francisco, California, United States, 94105, 8 Mission Street, JV</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.NotificationServiceTest@1edb8c6</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.NotificationServiceTest.reHotelSearchServiceTest()'><b>reHotelSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.NotificationServiceTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_listView" queryID="170011_null" type="accommodation">
+		<Records maxResults="1500" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>25.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="42.35863" longitude="-71.0567"/>
+		</GlobalParameters>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Proximity distance="25.0" distanceUOM="mi" latitude="42.35863" longitude="-71.0567"/>
+					<Group operation="AND">
+						<Match exact="true" field="name" wildcard="false">ames</Match>
+					</Group>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="xref_label" wildcard="false">SABREID</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="42.35863" longitude="-71.0567"/>
+		</Fields>
+		<Context>
+			<userId>170011</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 1, 1, Ames Boston Hotel, Boston, Massachusetts, United States, 02108, 1 Court Street, QQ</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.NotificationServiceTest@1edb8c6</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.NotificationServiceTest.reHotelSearchServiceTest()'><b>reHotelSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.NotificationServiceTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_listView" queryID="170011_LAX" type="accommodation">
+		<Records maxResults="15" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>25.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="33.9456" longitude="-118.3923"/>
+		</GlobalParameters>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Proximity distance="25.0" distanceUOM="mi" latitude="33.9456" longitude="-118.3923"/>
+					<Group operation="OR">
+						<Match exact="true" field="name_chain_code" wildcard="false">YO</Match>
+					</Group>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="xref_label" wildcard="false">SABREID</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="33.9456" longitude="-118.3923"/>
+		</Fields>
+		<Context>
+			<userId>170011</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 1, 1, Candlewood Suites LAX Hawthorne, Hawthorne, California, United States, 90250, 11410 Hawthorne Blvd, YO</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.NotificationServiceTest@1edb8c6</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.NotificationServiceTest.reHotelSearchServiceTest()'><b>reHotelSearchServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.NotificationServiceTest<br>Parameters: http://relevance-engine-stage.scqa.rden.us/search-service/v2, <?xml version="1.0" encoding="UTF-8"?><ss:QueryRequests xmlns:ss="http://www.reardencommerce.com/SearchService_v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reardencommerce.com/SearchService_v2 SearchService_v2.xsd ">
+	<Query profile="b2b_listView" queryID="170011_null" type="accommodation">
+		<Records maxResults="15" startAt="0"/>
+		<GlobalParameters>
+			<searchRadius>25.0</searchRadius>
+			<distanceUnit>mi</distanceUnit>
+			<searchPoint latitude="37.793934" longitude="-122.39241"/>
+		</GlobalParameters>
+		<Constraints>
+			<Group operation="AND">
+				<Group operation="AND">
+					<Proximity distance="25.0" distanceUOM="mi" latitude="37.793934" longitude="-122.39241"/>
+					<Group operation="OR">
+						<Match exact="true" field="name_chain_code" wildcard="false">NZ</Match>
+					</Group>
+				</Group>
+				<Group operation="OR">
+					<Match exact="false" field="xref_label" wildcard="false">SABREID</Match>
+				</Group>
+			</Group>
+		</Constraints>
+		<Fields>
+			<Distance distanceUOM="mi" field="distance" latitude="37.793934" longitude="-122.39241"/>
+		</Fields>
+		<Context>
+			<userId>170011</userId>
+		</Context>
+	</Query>
+</ss:QueryRequests>, 1, 1, Villa Montes Hotel, an Ascend Collection, San Bruno, California, United States, 94066, 620 El Camino Real, NZ</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.NotificationServiceTest@1edb8c6</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RESearchServiceTest.recommendationServiceTest()'><b>recommendationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RESearchServiceTest<br>Parameters: http://scqalres01.scqa.rden.us:8080/recommendation-service/restful-services/item/recommend, {  "context": {    "viewId": "view12345",    "userId": "Quick Hank",    "dynamicParameters": {      "categoryId": "1"    }  },  "desiredResultCount": 5,  "minimumResultCount": 5,  "strategy": [    "topDiscountedByCategory"  ]}</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RESearchServiceTest@135fd95</td></tr>
+<tr>
+<td title='com.deem.joltage.platformtests.test.RESearchServiceTest.recommendationServiceTest()'><b>recommendationServiceTest</b><br>Test class: com.deem.joltage.platformtests.test.RESearchServiceTest<br>Parameters: http://scqalres01.scqa.rden.us:8080/recommendation-service/restful-services/item/recommend, {  "context": {    "viewId": "view12345",    "userId": "Quick Hank",    "dynamicParameters": {      "categoryId": "1"    }  },  "desiredResultCount": 5,  "minimumResultCount": 5,  "strategy": [    "topDiscountedByCategory"  ]}</td>
+<td></td>
+<td>0</td>
+<td>com.deem.joltage.platformtests.test.RESearchServiceTest@135fd95</td></tr>
+</table><p>
+</body>
+</html>

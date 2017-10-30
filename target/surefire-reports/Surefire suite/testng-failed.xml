@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="com.deem.joltage.platformtests.test.LocationServiceTest">
+        <methods>
+          <include name="validatedSuggestedPostalAddressServiceTest" invocation-numbers="0"/>
+          <include name="validatedGeocodeQueryTest" invocation-numbers="1 23"/>
+          <include name="validatedPostalAddressServiceTest" invocation-numbers="6"/>
+          <include name="testSetUp"/>
+        </methods>
+      </class> <!-- com.deem.joltage.platformtests.test.LocationServiceTest -->
+      <class name="com.deem.joltage.platformtests.test.NotificationServiceTest">
+        <methods>
+          <include name="setTest"/>
+          <include name="reHotelSearchServiceTest"/>
+        </methods>
+      </class> <!-- com.deem.joltage.platformtests.test.NotificationServiceTest -->
+      <class name="com.deem.joltage.platformtests.test.RESearchServiceTest">
+        <methods>
+          <include name="categoryServiceTest"/>
+          <include name="setTest"/>
+          <include name="recommendationServiceTest"/>
+        </methods>
+      </class> <!-- com.deem.joltage.platformtests.test.RESearchServiceTest -->
+      <class name="com.deem.joltage.platformtests.test.RENightlySuiteTest">
+        <methods>
+          <include name="reCarRentalMultSearchService" invocation-numbers="1"/>
+          <include name="reCostAllcationSearchServiceTest" invocation-numbers="0"/>
+          <include name="setTest"/>
+        </methods>
+      </class> <!-- com.deem.joltage.platformtests.test.RENightlySuiteTest -->
+      <class name="com.deem.joltage.platformtests.test.UserProfileServiceTest">
+        <methods>
+          <include name="validateUserInfoTest" invocation-numbers="0"/>
+          <include name="setTest"/>
+          <include name="updateUserServiceTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.deem.joltage.platformtests.test.UserProfileServiceTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

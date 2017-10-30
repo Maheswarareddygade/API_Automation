@@ -1,0 +1,10 @@
+{
+ "authorization": {
+  "registration": "NOT_STARTED",
+  "roles": [
+        {
+    "name": "ROLE_APPROVER"
+   }
+  ]
+ }
+}

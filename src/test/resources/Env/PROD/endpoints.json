@@ -1,0 +1,9 @@
+{
+	"Enpoints": {
+
+            "userApi": "https://api-qa.digisight.net/",
+            "HotalSearchService": "http://relevance-engine-stage.scqa.rden.us/search-service/v2",
+            "RecommendationService": "http://scqalres01.scqa.rden.us:8080/recommendation-service/restful-services/item/recommend"
+      }
+
+}

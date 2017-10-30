@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 30 14:05:26 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>29 seconds (29450 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.digisight.platform.test.EHRTest.ehrTest()'><b>ehrTest</b><br>Test class: com.digisight.platform.test.EHRTest<br>Parameters: https://ehr-qa.digisight.net//Integration/Authenticate, qa@digisight.net, Password@1, Bearer, </td>
+<td></td>
+<td>6</td>
+<td>com.digisight.platform.test.EHRTest@57fffcd7</td></tr>
+<tr>
+<td title='com.digisight.platform.test.UserServiceTest.encounterListServiceTest()'><b>encounterListServiceTest</b><br>Test class: com.digisight.platform.test.UserServiceTest<br>Test method:  Method is used to test create encounter & encounter list service.<br>Parameters: https://api-qa.digisight.net/gw/paxos/</td>
+<td></td>
+<td>5</td>
+<td>com.digisight.platform.test.UserServiceTest@31ef45e3</td></tr>
+<tr>
+<td title='com.digisight.platform.test.UserServiceTest.filterLocationslistServiceTest()'><b>filterLocationslistServiceTest</b><br>Test class: com.digisight.platform.test.UserServiceTest<br>Test method:  Method is used to test filter locations list service.<br>Parameters: https://api-qa.digisight.net/gw/api/filterLocations, 0, BANGALORE, 667</td>
+<td></td>
+<td>1</td>
+<td>com.digisight.platform.test.UserServiceTest@31ef45e3</td></tr>
+<tr>
+<td title='com.digisight.platform.test.UserServiceTest.getAuthorizationServiceTest()'><b>getAuthorizationServiceTest</b><br>Test class: com.digisight.platform.test.UserServiceTest<br>Test method:  Method is used to test authorization service <br>Parameters: https://api-qa.digisight.net/gw/api/oauth/token, Bearer, password, automation@digisight.net, Test1234, 1.8.1</td>
+<td></td>
+<td>1</td>
+<td>com.digisight.platform.test.UserServiceTest@31ef45e3</td></tr>
+<tr>
+<td title='com.digisight.platform.test.UserServiceTest.getUserInfoServiceTest()'><b>getUserInfoServiceTest</b><br>Test class: com.digisight.platform.test.UserServiceTest<br>Test method:  Method is used to test user info service. <br>Parameters: https://api-qa.digisight.net/gw/paxos/getUser, , automation, manchester, automation@digisight.net, 665, India, 153, 153, 1525, 10788, 153, automation@digisight.net</td>
+<td></td>
+<td>1</td>
+<td>com.digisight.platform.test.UserServiceTest@31ef45e3</td></tr>
+<tr>
+<td title='com.digisight.platform.test.UserServiceTest.locationListServiceTest()'><b>locationListServiceTest</b><br>Test class: com.digisight.platform.test.UserServiceTest<br>Test method:  Method is used to test location list service.<br>Parameters: https://api-qa.digisight.net/gw/api/locations, 665, 153, India</td>
+<td></td>
+<td>1</td>
+<td>com.digisight.platform.test.UserServiceTest@31ef45e3</td></tr>
+<tr>
+<td title='com.digisight.platform.test.UserServiceTest.patientListServiceTest()'><b>patientListServiceTest</b><br>Test class: com.digisight.platform.test.UserServiceTest<br>Test method:  Method is used to test patient list service.<br>Parameters: https://api-qa.digisight.net/gw/paxos/</td>
+<td></td>
+<td>6</td>
+<td>com.digisight.platform.test.UserServiceTest@31ef45e3</td></tr>
+<tr>
+<td title='com.digisight.platform.test.UserServiceTest.physiciansListServiceTest()'><b>physiciansListServiceTest</b><br>Test class: com.digisight.platform.test.UserServiceTest<br>Test method:  Method is used to test location list service.<br>Parameters: https://api-qa.digisight.net/gw/api/physicians</td>
+<td></td>
+<td>1</td>
+<td>com.digisight.platform.test.UserServiceTest@31ef45e3</td></tr>
+<tr>
+<td title='com.digisight.platform.test.UserServiceTest.practicesListServiceTest()'><b>practicesListServiceTest</b><br>Test class: com.digisight.platform.test.UserServiceTest<br>Test method:  Method is used to test location list service.<br>Parameters: https://api-qa.digisight.net/gw/api/practices</td>
+<td></td>
+<td>3</td>
+<td>com.digisight.platform.test.UserServiceTest@31ef45e3</td></tr>
+</table><p>
+</body>
+</html>
